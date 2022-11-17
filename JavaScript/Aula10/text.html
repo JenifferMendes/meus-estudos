@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM teste</title>
+    <style>
+        div#area {
+            background: purple;
+            color: white;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+        
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('dblclick', cliqueduplo)
+        
+        function clicar() {
+        a.innerText = "Diurno"
+        window.document.body.style.background = 'black'
+        a.style.background = 'purple'
+        }
+        function entrar() {
+        a.innerText = 'Entrou!'
+        a.style.background = 'red'
+        }
+        function sair() {
+        a.innerText = 'Interaja'
+        a.style.background = 'blue'
+        }
+        function cliqueduplo() {
+        a.innerText = "Noturno!"
+        window.document.body.style.background = 'white'
+        a.style.background = 'purple'
+        }
+   </script>
+</body>
+</html>

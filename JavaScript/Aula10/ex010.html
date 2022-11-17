@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            background: purple;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+    
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+        a.innerText = "Clicou!"
+        a.style.background = 'black'
+        }
+        function entrar() {
+        a.innerText = 'Entrou!'
+        a.style.background = 'red'
+        }
+        function sair() {
+        a.innerText = 'Saiu!'
+        a.style.background = 'blue'
+        }
+
+
+        /*
+        Para colocar no HTML:
+        vai em <div> e adiciona os eventos apos o id
+        exemplo:
+        onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+        ou seja:
+        evento="nomedoevento()"
+        
+        Para colocar na parte do JS:
+        coloque apos a declaração da variavel que será alterada.
+        exemplo:
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        ou seja:
+        a.addEventListener('evento', nome do evento)
+        */
+    </script>
+</body>
+</html>
