@@ -13,11 +13,12 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 ## :books:Cursos que estou fazendo:
 
 - [ ] Curso HTML5 e CSS3: Módulo 02 [(Curso em Vídeo)](https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s)
-- [ ] Segurança da Informação: Módulo 02 [(Curso em Vídeo)](https://www.youtube.com/watch?v=77pG2rellUk&list=PLHz_AreHm4dlT599reA1xLkbT83g2gMvI)
-
 
 ## :date: Cursos que quero fazer:
 - [ ] Curso HTML5 e CSS3: Módulo 03 [(Curso em Vídeo)](https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ)
 - [ ] Curso HTML5 e CSS3: Módulo 04 [(Curso em Vídeo)](https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT)
+
+## :date: Aguardando mais aulas:
+- [ ] Segurança da Informação: Módulo 02 [(Curso em Vídeo)](https://www.youtube.com/watch?v=77pG2rellUk&list=PLHz_AreHm4dlT599reA1xLkbT83g2gMvI)
 
 >![Jkoizumii Anotando ](https://user-images.githubusercontent.com/115995202/202778646-5ae0e4c8-c8b9-474e-9036-12c0038782a7.png)
