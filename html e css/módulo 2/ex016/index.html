@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cores em CSS</title>
+    <style>
+    </style>
 </head>
 <body>
     <h1>Cores em CSS</h1>
     <p>Para entender esse exercício, olhe bem atentamente o código fonte do arquivo.</p>
-    
+    <!--Representação por nomes-->
     <h2 style="background-color: darkblue; color: white;">Este título está colorido usando cores por nome</h2>
-
-    <h2 style="background-color: #00008b; color:white;">Já esse está usando cores pelo código Hexadecimal</h2>
-
-    <h2 style="background-color: rgb(0,0, 139); color: white;">Este outro está colorido usando códigos RGB(red, green, blue)</h2>
     
-    <h2 style="background-color: hsl(240, 100%, 27%); color: white;">Este outro aqui está usando códigos HSL(hue, saturation, light)</h2>
+    <!--Representação por código Hexadecimais-->
+    <!--Decimal 0 1 2 3 4 5 6 7 8 9 -->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F -->
+    <h2 style="background-color: #00008b; color:#FFFFFF;">Já esse está usando cores pelo código Hexadecimal</h2>
+   
+    <!--Representação em RGB(Red, Green, Blue)-->
+    <h2 style="background-color: rgb(0,0, 139); color: rgb(255,255,255);">Este outro está colorido usando códigos RGB(red, green, blue)</h2>
+    
+    <!--Representação por HSL( Hue, Sturation, Luminosity)-->
+    <h2 style="background-color: hsl(240, 100%, 27%); color: hsl(0,0%,100%)">Este outro aqui está usando códigos HSL(hue, saturation, light)</h2>
     <p>As cores resultantes são exatamente as mesmas, mas o formato de reprentação muda conforme o padrão escolhido.</p>
     <p>Também é possivel usar transparência, usando o formato RGBA(red, green, blue, alpha).</p>
 
     <h2 style="background-color: rgba(0,0,139,0.5); color: white">Nesse o Título, o fundo azul teve sua transparência configurada para 50%</h2>
+  
 
 </body>
 </html>
