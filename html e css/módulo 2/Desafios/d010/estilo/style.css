@@ -1,8 +1,12 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'Android';
-    src: url('fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
 }
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -14,85 +18,132 @@
     --fonte1: 'Bebas Neue', cursive;
     --fonte2: 'Android', sans-serif;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: var(--cor0);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    text-align: center;
+}
+
+a.externo::after {
+    content: '\0020\1F517';
 }
 
 header {
-    background-image: linear-gradient(to bottom,#3dda84, #063d1e);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 40px;
     margin: auto;
+    min-height: 150px;
 }
+header > h1 {
+    color: white;
+    font-family: var(--fonte1);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267)
 
+}
+header > p {
+    font-family: var(--fonte0);
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    margin: auto;
+    text-align: center;
+    
+}
 nav {
+    background-color: var(--cor5);
     text-align: left;
     padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.219);
 }
 nav > a {
     text-decoration: none;
     color: white;
+    padding: 10px;
     font-weight: bold;
-    margin-right: 20px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    margin: auto;
-
-}
-
-h1#principal {
-    font-family: 'Android', Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color: #175a35;
-    margin: auto;
-    padding: 10px;
-    text-align: left;
-}
-
-h2 {
-    font-family: 'Android', Arial, Helvetica, sans-serif;
-    color: #175a35;
-    background-image: linear-gradient(to right, #2fa8653f, white);
-    font-size: 1.5em;
-    text-indent: 30px;
-    text-align: left;
-}
-
-h3 {
-    color: white;
-    background-color: #2fa866;
-    text-align: left;
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px
-}
-
-h4 {
-    color: white;
-    font-style: normal;
-}
-
-p {
-    text-align: justify;
-    text-indent: 30px;
-    padding: 5px 10px 5px 10px;
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
     background-color: white;
-    width: 800px;
+    min-width: 300px;
+    max-width: 1000px;
     border-radius: 0px 0px 10px 10px;
     margin: auto;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
 }
+
+main  h1 {
+    color: var(--cor5);
+    font-family: var(--fonte2);  
+}
+
+main h2{
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px 0px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    color: var(--cor5);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
 div.video {
     position: relative;
     background-color: var(--cor4);
@@ -111,24 +162,41 @@ div.video > iframe {
     height: 90%;
 }
 
-#final {
-    background-color: #c5ebd6;
-    width: 775px;
+aside {
+    background-color: var(--cor1);
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px #1a5c3862;
+    box-shadow: 5px 5px 8px #1a5c3862;
     margin: auto;
 }
- 
-ul {
+aside h3 {
+    color: white;
+    background-color: var(--cor4);
+    text-align: left;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px
+}
+aside ul {
     list-style-type: '\2714\0020\0020';
     columns: 2;
     list-style-position: inside;
 }
 
 footer {
-    background-color: #1a5c38;
+    background-color: var(--cor5);
     color: white;
     text-align: center;
+    font-size: 0.8em;
     padding: 1px;
     margin: 0px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1) ;
 }
