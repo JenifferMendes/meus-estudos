@@ -46,7 +46,9 @@ header > h1 {
     font-family: var(--fonte1);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267)
+    
 
 }
 header > p {
@@ -94,7 +96,9 @@ main {
 
 main  h1 {
     color: var(--cor5);
-    font-family: var(--fonte2);  
+    font-family: var(--fonte2); 
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2{
@@ -103,6 +107,7 @@ main h2{
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
+    font-weight: normal;
 }
 
 main p {
