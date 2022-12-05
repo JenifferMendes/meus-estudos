@@ -10,41 +10,45 @@
 }
 * {
     margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 header {
     background-color: black;
-    height: 250px;
+    color: white;
+    text-align: center;
 }
 
-header h1 {
-    color: white;
+header > h1 {
     font-family: var(--fonte1);
-    text-align: center;
     margin: auto;
-    padding: 50px;
-    font-size: 3.5em;    
+    padding-top: 50px;
+    font-size: 3.5em; 
+    font-variant: small-caps;   
 }
 
 header p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    font-family: var(--fonte2);
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 main {
     background-color: white;
-    border: 1px black;
+
 }
 
 main p {
@@ -53,21 +57,31 @@ main p {
     font-size: 3em;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+section.normal {
+    background-color: white;
+    color: black;
+    
+}
+section.imagem {
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
 div#flor {
     background-image: url(../imagens/background001.jpg);
 }
 
 div#livro {
     background-image: url(../imagens/background002.jpg);
-}
-
-p.imagem1 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.712);
-}
-p.imagem2 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.247);
 }
 
 footer {
@@ -82,12 +96,3 @@ footer p {
     padding: 10px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    font-style: bolder;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
