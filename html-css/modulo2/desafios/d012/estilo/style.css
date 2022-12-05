@@ -4,18 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte1: 'Passion One'; 
+    --fonte1: 'Passion One', cursive; 
     --fonte2: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte3: 'Sriracha';
+    --fonte3: 'Sriracha', cursive;
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
+
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: white;
+    font-family: var(--fonte2);
 }
+
 header {
     background-color: black;
     color: white;
@@ -26,7 +30,7 @@ header > h1 {
     font-family: var(--fonte1);
     margin: auto;
     padding-top: 50px;
-    font-size: 3.5em; 
+    font-size: 10vw;
     font-variant: small-caps;   
 }
 
@@ -46,22 +50,13 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-main {
-    background-color: white;
-
-}
-
-main p {
+section {
+    line-height: 2em;
     text-align: left;
     font-family: var(--fonte3);
-    font-size: 3em;
+    font-size: 3.5vw;
 }
 
-section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-
-}
 section.normal {
     background-color: white;
     color: black;
@@ -85,7 +80,6 @@ div#livro {
 }
 
 footer {
-    height: 50px;
     background-color: black;
 }
 
@@ -95,4 +89,3 @@ footer p {
     text-align: center;
     padding: 10px;
 }
-
