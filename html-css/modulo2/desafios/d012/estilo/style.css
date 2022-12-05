@@ -18,8 +18,11 @@ html, body {
     min-height: 100vh;
     background-color: white;
     font-family: var(--fonte2);
+    margin-bottom: -70px;
 }
-
+pre {
+    white-space: pre-line;
+}
 header {
     background-color: black;
     color: white;
@@ -51,31 +54,42 @@ header a:hover, footer a:hover {
 }
 
 section {
-    line-height: 2em;
-    text-align: left;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 4vw;
+    padding-left: 50px;
+
 }
 
 section.normal {
     background-color: white;
     color: black;
+   
     
 }
 section.imagem {
     background-color: rgb(58, 57, 57);
     color: white;
+    padding-bottom: 50px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
 
-div#flor {
+section#img01 {
     background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+
 }
 
-div#livro {
+section#img02 {
     background-image: url(../imagens/background002.jpg);
 }
 
