@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: 'Passion One'; 
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: 'Sriracha';
+}
+* {
+    margin: 0px;
+}
+header {
+    background-color: black;
+    height: 250px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    font-size: 3.5em;    
+}
+
+header p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    border: 1px black;
+}
+
+main p {
+    text-align: left;
+    font-family: var(--fonte3);
+    font-size: 3em;
+}
+
+div#flor {
+    background-image: url(../imagens/background001.jpg);
+}
+
+div#livro {
+    background-image: url(../imagens/background002.jpg);
+}
+
+p.imagem1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+p.imagem2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    font-family: var(--fonte2);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-style: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
