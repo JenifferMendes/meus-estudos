@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(206, 201, 201);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr > th { /* para deixar o cabeçalho fixo enquanto rola a tabela, só é util para tabelas grandes.*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        /* caso tenha plano de fundo usar dois desse um para o par(even) e o outro para impar ou usar 2n-1, 2n (odd)*/
+        tbody > tr:nth-child(2n) { /* usar para efeito zebrado*/
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        anatomia para tabelas grandes
+        table
+            CAPTION (legenda) 
+            thead
+                tr,td,th 
+            tbody
+                tr,td,th 
+            tfoot
+                tr,td,th 
+                tr = linha
+                td = dado
+                th = titulo
+            scope col = coluna
+            scope row = linha
+    
+    -->
+    <table>
+        <caption>População  das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+            <td> Paraná</td>
+            <td class="num">11 597 484</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 466 630</td>
+        </tr>
+        <tr>
+            <td> Pernambuco</td>
+            <td class="num">9 674 793</td>
+        </tr>
+                        <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+            <td> Paraná</td>
+            <td class="num">11 597 484</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 466 630</td>
+        </tr>
+        <tr>
+            <td> Pernambuco</td>
+            <td class="num">9 674 793</td>
+        </tr>
+                        <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+                            <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+                            <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+                            <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+                            <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+                            <td> Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num"><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem corrupti, fugit unde, rerum veritatis repellat porro sunt iste illum voluptatem minus itaque laudantium expedita. Alias cupiditate a quaerat in! Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam praesentium. Soluta doloremque commodi nemo laudantium eaque et blanditiis nihil esse sapiente, repudiandae natus obcaecati, quidem atque earum iure consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae amet voluptatum nobis molestiae tenetur atque dolor doloremque enim quos itaque iste dignissimos, corporis illo facilis dolorem illum asperiores officiis reprehenderit?</p>
+
+</body>
+</html>
