@@ -17,6 +17,8 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 
 ## :date: Cursos que quero fazer:
 - [ ] Curso HTML5 e CSS3: Módulo 04 [(Curso em Vídeo)](https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT)
+- [ ] MySQL [40 Horas] [(Curso em Vídeo)](https://www.cursoemvideo.com/curso/mysql/)
+- [ ] Marketing Digital [40 Horas] [(Curso em Vídeo)](https://www.cursoemvideo.com/curso/marketing-digital/)
 
 ## :date: Aguardando mais aulas:
 - [ ] Segurança da Informação: Módulo 02 [(Curso em Vídeo)](https://www.youtube.com/watch?v=77pG2rellUk&list=PLHz_AreHm4dlT599reA1xLkbT83g2gMvI)
