@@ -8,7 +8,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 - [x] Segurança da Informação: Módulo 01 [(Curso em Vídeo)](https://www.youtube.com/watch?v=UMJgG-hp0f8&list=PLHz_AreHm4dkYS6J9KeYgCCVpo5OXkvgE)
 - [x] Curso HTML5 e CSS3: Módulo 01 [(Curso em Vídeo)](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
 - [x] Curso HTML5 e CSS3: Módulo 02 [(Curso em Vídeo)](https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s)
-- [x ] Curso HTML5 e CSS3: Módulo 03 [(Curso em Vídeo)](https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ)
+- [x] Curso HTML5 e CSS3: Módulo 03 [(Curso em Vídeo)](https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ)
 - [x] JavaScript [(Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 - [x] Git e GitHub [(Curso em Vídeo)](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
 
