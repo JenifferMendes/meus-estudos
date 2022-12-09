@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 900px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando o site do 
-        
-<iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+    <!--Tamanho padrão 300x150px
+    você pode colocar na tag os tamanhos, mas se vc criar nas css, oque manda é as css
+
+    parametro scolling faz parar de rolar caso use o "no", porém, alguns navegadores pode não funcionar!-->
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500">    <a href="https://www.cursoemvideo.com/" target="_blank">Curso em video</a>
+    </iframe>
     para aprender a programar.</p>
 
     <p>
         o site do 
         <iframe src="https://www.google.com/" frameborder="0"></iframe>
+    </p>
+
+    <p>
+        o site <iframe src="https://gustavoguanabara.github.io/" frameborder="0" height="500" width="500"></iframe>
     </p>
 </body>
 </html>
