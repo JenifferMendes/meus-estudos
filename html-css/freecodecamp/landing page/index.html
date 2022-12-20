@@ -11,7 +11,9 @@
 <body>
      <main>
         <header id="header">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo" id="header-img">
+            <div class="logo">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo" id="header-img">
+            </div>
             <nav id="nav-bar">
                 <ul>
                     <li><a class="nav-link" href="#features">Features</a></li>
@@ -28,27 +30,37 @@
             </form>
         </section>
         <section id="features">
-            <div>
-                <i class="fa fa-3x fa-fire"></i>
-            </div>
-            <div>
-                <h1>Premium Materials</h1>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="desc">
+                    <h1>Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
             </div>
             
             
-            <div>
-                <i class="fa fa-3x fa-truck"></i>
-            </div>
-            <div>
-                <h1>Fast Shipping</h1>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="desc">
+                    <h1>Fast Shipping</h1>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
             </div>
 
-            <div>
-                <i class="fa fa-3x fa-battery-full"></i><h1>Quality Assurance</h1>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                </div>
+                <div  class="desc">
+                    <h1>Quality Assurance</h1>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
             </div>
+
         </section>
         <section id="how-it-works">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

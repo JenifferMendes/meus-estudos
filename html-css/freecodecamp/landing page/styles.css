@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
+    box-sizing: border-box;
     font-family: Lato, sans-serif;
     color: black;
     padding: 0;
@@ -13,36 +14,107 @@
 /*-----------------------header*/
 
 header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
     padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-#header-img {
-    width:300px;
-    height: 34.14;
+.logo {
+    margin: 0 0 0 20px;
+    width: 60vw;
 }
-.nav-link {
-    text-decoration: none;
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+nav {
+    font-weight: 400;
+    
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+    width: 35vw;
+}
+.nav-link {
+    text-decoration: none;   
+}
 /*----------------------Form*/
 
 #section-form {
-    margin: 50px 0px 0px;
+    margin: 75px 0px 0px;
+}
+#section-form  h1 {
+    text-align: center;
 }
 
 form {
     text-align: center;
     padding: 20px 0;
 }
+input[type="email"] {
+    background-color: #fff;
+    width: 20vw;
+    min-width: 300px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
 input[type="submit"] {
     width: 150px;
     height: 30px;
     background-color: #f1c40f;
     border: none;
+    font-weight: 900;
+    font-size: 1.1em;
 }
 input[type="submit"]:hover {
     background-color: orange;
+    transition: background-color 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
 }
 /*--------------features*/
+#features {
+    margin-top: 50px;
+}
+.grid {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.desc {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    padding: 5px;
+
+}
+
 i {
     color: darkorange;
 }
@@ -51,23 +123,50 @@ li {
     list-style-type: none;
     text-align: center;
 }
-
-/*------------------pricing*/
-#pricing {
+/*---------------------how it works*/
+#how-it-works {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 60px 0px
+}
+/*------------------pricing*/
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
     
 }
 .trombone {
-    width: 100%;
-    max-width: 200px;
     border: 1px solid black;
+    border-radius: 3px;
     text-align: center;
+    margin: 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: cal(100% / 3);
     
 }
 .title-pricing {
     background-color: #DDDDDD;
-    padding: 15px 0;
+    width: 100%;
+    padding: 20px 60px;
+}
+
+.trombone > h2 {
+    margin-top: 15px;
+}
+
+.trombone > ul {
+    margin: 15px 0;
+    padding: 10px 0;
+}
+li {
+    padding: 5px;
 }
 button {
     font-family: Arial, Helvetica, sans-serif;
@@ -78,22 +177,46 @@ button {
     height: 40px;
     padding: 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 button:hover {
     background: orange;
+    transition: background-color 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
 }
 
 /*----------------------footer*/
 footer {
     width: 100%;
-    height: 81px;
     background-color: #DDDDDD;
     text-align: right;
     padding: 20px;
     margin: 30px 0px 0px;
 }
 
+footer p {
+    background-color: #DDDDDD;
+    font-size: 15px;
+}
+
 footer a {
     text-decoration: none;
+    background-color: #DDDDDD;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+
+/*---------*/
+@media (max-width: 800px) {
+    .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
 }
