@@ -148,9 +148,9 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: cal(100% / 3);
-    
+    width: calc(100% / 3); 
 }
+
 .title-pricing {
     background-color: #DDDDDD;
     width: 100%;
