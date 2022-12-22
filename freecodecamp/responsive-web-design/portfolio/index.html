@@ -16,9 +16,9 @@
         <header>
             <nav id="navbar">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#welcome-section">About</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,11 +27,10 @@
         <h1>Hey I am Mimic</h1>
         <p>a web developer</p>
     </section>
-
     <section id="projects">
             <h1 class="project-tile">These are some of my projects</h1>
             <div class="projects-grid">
-                <a id="tribute-page" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                <a id="tribute-page" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
@@ -40,7 +39,7 @@
                     </p>
                 </a>
 
-                <a id="randow-quote" href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
+                <a id="randow-quote" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
@@ -49,7 +48,7 @@
                     </p>
                 </a>
 
-                <a id="javascript" href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+                <a id="javascript" href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
                     <img  class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
@@ -58,7 +57,7 @@
                     </p>
                 </a>
 
-                <a id="map-data" href="https://codepen.io/freeCodeCamp/full/mVEJag">
+                <a id="map-data" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
@@ -67,7 +66,7 @@
                     </p>
                 </a>
 
-                <a id="wikipedia" href="https://codepen.io/freeCodeCamp/full/wGqEga">
+                <a id="wikipedia" href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
@@ -76,36 +75,60 @@
                     </p>
                 </a>
 
-                <a id="tic-tac" href="https://codepen.io/freeCodeCamp/full/KzXQgy">
+                <a id="tic-tac" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
                     <p class="project-title">
                     <span class="code">&lt;</span>
                     Tic Tac Toe Game
                     <span class="code">/&gt;</span>
                     </p>
-                </a>
-                        
-                <a href="https://codepen.io/FreeCodeCamp/">
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Show all <i class="fas fa-chevron-right"></i>
-                        <span class="code">/&gt;</span>
-                        </p>
-                </a>
+                </a>   
             </div>
+                <a href="https://codepen.io/FreeCodeCamp/" target="_blank" class="show-all">
+                    <fontsninja-text id="fontsninja-text-44" class="fontsninja-family-1931">Show all </fontsninja-text><i class="fas fa-chevron-right"></i>
+                </a>
     </section>
-
     <section id="contact">
         <h1>Let's work together...</h1>
         <p>How do you take your coffee?</p>
+        <div class="contact-link">
+            <a href="https://www.facebook.com/freecodecamp" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+                <fontsninja-text id="fontsninja-text-51" class="fontsninja-family-1931"> Facebook</fontsninja-text>
+            </a>
+            <a id="profile-link" href="https://github.com/freecodecamp" target="_blank">
+                <i class="fab fa-github"></i>
+                <fontsninja-text id="fontsninja-text-53" class="fontsninja-family-1931"> GitHub</fontsninja-text>
+            </a>
+            <a href="https://twitter.com/freecodecamp" target="_blank">
+                <i class="fab fa-twitter"></i>
+                <fontsninja-text id="fontsninja-text-55" class="fontsninja-family-1931"> Twitter</fontsninja-text>
+            </a>
+            <a href="mailto:example@example.com" class="btn contact-details">
+                <i class="fas fa-at"></i>
+                <fontsninja-text id="fontsninja-text-57" class="fontsninja-family-1931"> Send a mail</fontsninja-text>
+            </a>
+            <a href="tel:555-555-5555" class="btn contact-details">
+                <i class="fas fa-mobile-alt"></i>
+                <fontsninja-text id="fontsninja-text-59" class="fontsninja-family-1931"> Call me</fontsninja-text>
+            </a>
+        </div>
     </section>
-
     <footer>
-        <ul>
-            <li>**This is just a fake portfolio. All the projects and contact details given are not real.</li>
-            <li>© Created for <a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
-        </ul>
+        <p>
+           <fontsninja-text id="fontsninja-text-62" class="fontsninja-family-1929">
+            **This is just a fake portfolio. All the projects and contact details
+            given are not real.
+           </fontsninja-text>
+        </p>
+        <p>
+            <fontsninja-text id="fontsninja-text-63" class="fontsninja-family-1929">
+            © Created for
+            </fontsninja-text>
+            <a href="https://www.freecodecamp.com/" target="_blank"><fontsninja-text id="fontsninja-text-64" class="fontsninja-family-1929"> freeCodeCamp </fontsninja-text>
+            <i class="fab fa-free-code-camp"></i>
+            </a>
+        </p>
     </footer>
-
 </body>
 </html>
