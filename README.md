@@ -11,12 +11,13 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 - [x] Curso HTML5 e CSS3: Módulo 03 [(Curso em Vídeo)](https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ)
 - [x] JavaScript [(Curso em Vídeo)](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 - [x] Git e GitHub [(Curso em Vídeo)](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+- [x] Design responsivo para a web (novo) [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/)
 
 ## :books:Cursos que estou fazendo:
 - [ ] Curso HTML5 e CSS3: Módulo 04 [(Curso em Vídeo)](https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT)
-- [ ] Design responsivo para a web (novo) [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/)
-## :date: Cursos que quero fazer:
+- [ ] Algoritmos e estruturas de dados em JavaScript[(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/)
 
+## :date: Cursos que quero fazer:
 - [ ] MySQL [40 Horas] [(Curso em Vídeo)](https://www.cursoemvideo.com/curso/mysql/)
 - [ ] Marketing Digital [40 Horas] [(Curso em Vídeo)](https://www.cursoemvideo.com/curso/marketing-digital/)
 
