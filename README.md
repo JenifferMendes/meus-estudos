@@ -15,7 +15,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 
 ## :books:Cursos que estou fazendo:
 - [ ] Curso HTML5 e CSS3: Módulo 04 [(Curso em Vídeo)](https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT)
-- [ ] Algoritmos e estruturas de dados em JavaScript[(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/)
+- [ ] Algoritmos e estruturas de dados em JavaScript [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/)
 
 ## :date: Cursos que quero fazer:
 - [ ] MySQL [40 Horas] [(Curso em Vídeo)](https://www.cursoemvideo.com/curso/mysql/)
