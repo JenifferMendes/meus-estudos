@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World!")
+        //Janeiro
+        salario1 = 5000
+        alimentacao1 = 1000
+        transporte1 = 400
+        internet1 = 170
+        luz1 = 600
+        agua1 = 150
+        lazer1 = 300
+        showDoBtsEm20251 = 400
+        saldo1 = (salario1 - alimentacao1 - transporte1 - internet1 - luz1 - agua1 - lazer1 - showDoBtsEm20251)
+        console.log("Saldo em Janeiro é ")
+        console.log(saldo1)
+        estaPositivo = saldo1 > 0
+        if (estaPositivo) {
+            console.log("Está fazendo o certo jotume")
+            rendimento1 = (saldo1 * 0.005)
+            saldo1 = saldo1 + rendimento1
+            console.log(saldo1)
+        } else {
+            console.log("Está devendo jotume")
+            divida1 = saldo1 + (saldo1 * 0.010)
+            saldo1 = saldo1 + divida1
+            console.log(saldo1)
+        }
+        // Fevereiro
+        salario2 = 5000
+        alimentacao2 = 1500
+        transporte2 = 800
+        internet2 = 170
+        luz2 = 800
+        agua2 = 150
+        lazer2 = 200
+        showDoBtsEm20252 = 600
+        saldo2 = (salario2 - alimentacao2 - transporte2 - internet2 - luz2 - agua2 - lazer2 - showDoBtsEm20252)
+        console.log("Saldo em Fevereiro é ")
+        console.log(saldo2)
+        estaPositivo = saldo2 > 0
+        if (estaPositivo) {
+            console.log("Está fazendo o certo jotume")
+            rendimento2 = saldo2 + (saldo2 * 0.005)
+            console.log(rendimento2)
+        } else {
+            console.log("Está devendo jotume")
+            divida2 = (saldo2 * 0.010)
+            saldo2 = saldo2 + divida2
+            console.log(saldo2)
+        }
+        // Março
+        salario3 = 5000
+        alimentacao3 = 2000
+        transporte3 = 500
+        internet3 = 170
+        luz3 = 600
+        agua3 = 150
+        lazer3 = 500
+        showDoBtsEm20253 = 800
+        showDoSkzem20233 = 300
+        saldo3 = (salario3 - alimentacao3 - transporte3 - internet3 - luz3 - agua3 - lazer3 - showDoBtsEm20253 - showDoSkzem20233)
+        console.log("Saldo em Março é ")
+        console.log(saldo3)
+        estaPositivo = saldo3 > 0
+        if (estaPositivo) {
+            console.log("Está fazendo o certo jotume")
+            rendimento3 = (saldo3 * 0.005)
+            saldo3 = saldo3 + rendimento3
+            console.log(saldo3)
+        } else {
+            console.log("Está devendo jotume")
+            divida3 = (saldo3 * 0.010)
+            saldo3 = saldo3 + divida3
+            console.log(saldo3)
+        }
+        console.log("Seu saldo foi de")
+        saldot = (saldo1 + saldo2 + saldo3)
+        console.log(saldot)
+    
+    </script>
+</body>
+</html>
