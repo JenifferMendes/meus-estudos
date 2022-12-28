@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+
+        // class + gasto por categoria pra todas.
+        function gastoPorCategoria(lancamentos, prop) {
+            let total = 0
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "despesa") {
+                    total += lancamento.valor                               
+                }
+            }
+            for (lancamento of lancamentos) {
+                if (prop === lancamento.categoria && lancamento.tipo === "despesa") {
+                    let porcentagemCategoria = (lancamento.valor * 100) / total
+                    console.log(lancamento.categoria, arredondar(porcentagemCategoria))
+                    console.log({porcentagemCategoria})
+                    return arredondar(porcentagemCategoria)
+                }
+            }
+        }
+        
         function arredondar(saldo) {
-            return Math.round(saldo * 100)/100
+            return Math.round(saldo * 100) / 100
         }
 
-        function calcularRendimento (saldo) {
+        function calcularRendimento(saldo) {
             return saldo += saldo * 0.005
-        } 
+        }
 
-        function calcularDivida (saldo) {
+        function calcularDivida(saldo) {
             return saldo += saldo * 0.01
-        }  
+        }
 
-        function calcularSaldo (saldoInicial, lancamentos) {
-            saldo = saldoInicial 
-            for(lancamento of lancamentos) {
-                saldo 
+        function calcularSaldo(mes, saldoInicial, lancamentos) {
+            console.log(mes)
+            saldo = saldoInicial
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "receita") {
+                    saldo += lancamento.valor
+                }
+                if (lancamento.tipo === "despesa") {
+                    saldo -= lancamento.valor
+                }
             }
             estaPositivo = saldo > 0
             if (estaPositivo) {
@@ -36,77 +63,59 @@
                 saldo = arredondar(calcularDivida(saldo))
                 console.log(saldo)
                 return saldo
-            } 
+            }
         }
         //Janeiro
-        lancamentoJaneiro = [
-            {categoria : "Salario", tipo: "Receita", valor: 5000 },
-            {categoria : "Alimentacao", tipo : "despesa", valor: 1000},
-            {categoria : "Transporte", tipo : "despesa", valor: 400},
-            {categoria : "Internet", tipo : "despesa", valor: 170},
-            {categoria : "Luz", tipo : "despesa", valor: 600},
-            {categoria : "Agua", tipo : "despesa", valor: 150},
-            {categoria : "Lazer", tipo : "despesa", valor: 300},
-            {categoria : "Show do BTS e SKZ", tipo : "despesa", valor: 400}
-        ]
         saldoInicial1 = 0
-        salario1 = 5000
-        alimentacao1 = 1000
-        transporte1 = 400
-        internet1 = 170
-        luz1 = 600
-        agua1 = 150
-        lazer1 = 300
-        showDoBtseSkz1 = 400
-        saldo1 = calcularSaldo(saldoInicial1, salario1, alimentacao1, transporte1, internet1, luz1, agua1, lazer1, showDoBtseSkz1)
-        // Fevereiro
-        lancamentoFevereiro = [
-            {categoria : "Salario", tipo: "Receita", valor: 5000 },
-            {categoria : "Alimentacao", tipo : "despesa", valor: 1500},
-            {categoria : "Transporte", tipo : "despesa", valor: 800},
-            {categoria : "Internet", tipo : "despesa", valor: 170},
-            {categoria : "Luz", tipo : "despesa", valor: 800},
-            {categoria : "Agua", tipo : "despesa", valor: 150},
-            {categoria : "Lazer", tipo : "despesa", valor: 200},
-            {categoria : "Show do BTS e SKZ", tipo : "despesa", valor: 600}
+        lancamentoJaneiro = [
+            { categoria: "Salario", tipo: "receita", valor: 5000 },
+            { categoria: "Alimentacao", tipo: "despesa", valor: 1000 },
+            { categoria: "Transporte", tipo: "despesa", valor: 400 },
+            { categoria: "Internet", tipo: "despesa", valor: 170 },
+            { categoria: "Luz", tipo: "despesa", valor: 600 },
+            { categoria: "Agua", tipo: "despesa", valor: 150 },
+            { categoria: "Lazer", tipo: "despesa", valor: 300 },
+            { categoria: "Show do BTS e SKZ", tipo: "despesa", valor: 400 }
         ]
-        saldoInicial2 = saldo1
-        salario2 = 5000
-        alimentacao2 = 1500
-        transporte2 = 800
-        internet2 = 170
-        luz2 = 800
-        agua2 = 150
-        lazer2 = 200
-        showDoBtseSkz2 = 600
-        saldo2 = calcularSaldo(saldoInicial2, salario2, alimentacao2, transporte2, internet2, luz2, agua2, lazer2, showDoBtseSkz2)
-        // Março
-        lancamentoMarco = [
-            {categoria : "Salario", tipo: "Receita", valor: 5000 },
-            {categoria : "Alimentacao", tipo : "despesa", valor: 1500},
-            {categoria : "Transporte", tipo : "despesa", valor: 800},
-            {categoria : "Internet", tipo : "despesa", valor: 170},
-            {categoria : "Luz", tipo : "despesa", valor: 800},
-            {categoria : "Agua", tipo : "despesa", valor: 150},
-            {categoria : "Lazer", tipo : "despesa", valor: 200},
-            {categoria : "Show do BTS e SKZ", tipo : "despesa", valor: 600}
-        ]
+        saldo1 = calcularSaldo("Janeiro", saldoInicial1, lancamentoJaneiro)
+        
+        gastoLuz = gastoPorCategoria(lancamentoJaneiro, "Luz")
+        gastoShow = gastoPorCategoria(lancamentoJaneiro, "Show do BTS e SKZ")
+        
 
+        // Fevereiro
+        saldoInicial2 = saldo1
+        lancamentoFevereiro = [
+            { categoria: "Salario", tipo: "receita", valor: 5000 },
+            { categoria: "Alimentacao", tipo: "despesa", valor: 1500 },
+            { categoria: "Transporte", tipo: "despesa", valor: 800 },
+            { categoria: "Internet", tipo: "despesa", valor: 170 },
+            { categoria: "Luz", tipo: "despesa", valor: 800 },
+            { categoria: "Agua", tipo: "despesa", valor: 150 },
+            { categoria: "Lazer", tipo: "despesa", valor: 200 },
+            { categoria: "Show do BTS e SKZ", tipo: "despesa", valor: 600 }
+        ]
+        saldo2 = calcularSaldo("Fevereiro", saldoInicial2, lancamentoFevereiro)
+
+        // Março
         saldoInicial3 = saldo2
-        salario3 = 5000
-        alimentacao3 = 2000
-        transporte3 = 500
-        internet3 = 170
-        luz3 = 600
-        agua3 = 150
-        lazer3 = 500
-        showDoBtseSkz3 = 1100
-        saldo3 = calcularSaldo(saldoInicial3, salario3, alimentacao3, transporte3, internet3, luz3, agua3, lazer3, showDoBtseSkz3)
-                
+        lancamentoMarco = [
+            { categoria: "Salario", tipo: "receita", valor: 5000 },
+            { categoria: "Alimentacao", tipo: "despesa", valor: 1500 },
+            { categoria: "Transporte", tipo: "despesa", valor: 800 },
+            { categoria: "Internet", tipo: "despesa", valor: 170 },
+            { categoria: "Luz", tipo: "despesa", valor: 800 },
+            { categoria: "Agua", tipo: "despesa", valor: 150 },
+            { categoria: "Lazer", tipo: "despesa", valor: 200 },
+            { categoria: "Show do BTS e SKZ", tipo: "despesa", valor: 600 }
+        ]
+        saldo3 = calcularSaldo("Março", saldoInicial3, lancamentoMarco)
+
         console.log("Seu saldo total foi de")
-        saldot = (saldo1 + saldo2 + saldo3)
+        saldot = saldo3
         console.log(arredondar(saldot))
-    
+
     </script>
 </body>
+
 </html>
