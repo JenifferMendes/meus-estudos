@@ -2,9 +2,9 @@
 Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a rotina de um programador, de forma simples.
 ```
 ```
-# aula 01 - 
-# aula 02 -
-# aula 03 -
+# aula 01 - variáveis, operadores e if/else
+# aula 02 - funções, parâmetros e retorno
+# aula 03 - arrays, objetos e for
 # aula 04 - classes, construtores e exceptions
 
 * Class
@@ -32,4 +32,5 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   novoBolo2 = new Bolo(4, 2, 2, "fuba", "chantilly")
 
   ```
-# aula 05 - 
+# aula 05 - OO, Métodos e Encapsulamento 
+
