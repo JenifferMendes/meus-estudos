@@ -1,5 +1,5 @@
-# Anotações referente ao curso "Aprenda a Programar"
-Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a rotina de um programador, de forma simples.
+# Anotações referente ao curso "Aprenda a Programar" - **Em Atualização!!!**
+Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a rotina de um programador, de forma simples.  
 ```
 ```
 # aula 01 - variáveis, operadores e if/else
