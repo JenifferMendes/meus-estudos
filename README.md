@@ -7,15 +7,15 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 - [x] **Segurança da Informação: Módulo 00**
   
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=KvPtIl-Gz2E&list=PLHz_AreHm4dlaTyjolzCFC6IjLzO8O0XV) (gratuito)
-* Minhas anotações do curso: [Anotações]() :yellow_circle: 
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/si/notesi.md) :yellow_circle: 
   
 - [x] **Segurança da Informação: Módulo 01**
 * Você pode acessar em:[Curso em Vídeo](https://www.youtube.com/watch?v=UMJgG-hp0f8&list=PLHz_AreHm4dkYS6J9KeYgCCVpo5OXkvgE) (gratuito)
-* Minhas anotações do curso: [Anotações]() :yellow_circle: 
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/si/notesi.md) :yellow_circle: 
   
 - [x] **Curso HTML5 e CSS3: Módulo 01**
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n) (gratuito)
-* Minhas Anotações sobre o curso: [(Anotações)](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/html-css/modulo1/notemodulo01.md) :yellow_circle:
+* Minhas Anotações sobre o curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/html-css/modulo1/notemodulo01.md) :yellow_circle:
 - [x] **Curso HTML5 e CSS3: Módulo 02** 
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s) (gratuito)
 * Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/html-css/modulo2/notemodulo02.md) :yellow_circle:
@@ -33,7 +33,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 * Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/git-github/notegitandgithub.md) :yellow_circle:
   
 - [x] Design responsivo para a web (novo) 
-* Você pode acessar em: [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/) (gratuito)
+* Você pode acessar em: [Free Code Camp](https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/) (gratuito)
 * Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/freecodecamp/responsive-web-design/notewebdesign.md) :yellow_circle:
 
 # :books:Cursos que estou fazendo:
@@ -62,7 +62,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 
 - [ ] Segurança da Informação: Módulo 02
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=77pG2rellUk&list=PLHz_AreHm4dlT599reA1xLkbT83g2gMvI) (gratuito)
-*  Minhas anotações do curso: [Anotações]() :yellow_circle:   
+*  Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/Exercicios-e-Desafios-de-Curso/blob/main/curso%20em%20video/si/notesi.md) :yellow_circle:   
 
 
   ---
