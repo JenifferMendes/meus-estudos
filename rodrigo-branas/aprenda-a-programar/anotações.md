@@ -34,3 +34,8 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   ```
 # aula 05 - OO, Métodos e Encapsulamento 
 
+  ## variáveis:
+  * var = <span style="color:red">**EVITAR SEMPRE USAR**</span>
+
+  * let = permite reatribuição
+  * const = não permite reatribuição.
