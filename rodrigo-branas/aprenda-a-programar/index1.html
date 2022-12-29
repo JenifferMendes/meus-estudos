@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto sofrência de aplicação financeira</title>
+</head>
+
+<body>
+    <script>
+
+        // class + gasto por categoria pra todas.
+        class Lancamento {
+            constructor (categoria, tipo, valor) {
+                if (categoria === "") {
+                    throw new Error("A Categoria é obrigatório!")
+                }
+                if (tipo !== "despesa" && tipo !== "receita") {
+                    throw new Error("O lançamento deve ser uma receita ou uma despesa")
+                }
+                if (valor < 0) {
+                    throw new Error("Valor inválido, insira um novo.")
+                }
+                this.categoria = categoria
+                this.tipo = tipo
+                this.valor = valor
+
+            }
+        }
+
+        function gastoPorCategoria(lancamentos) {
+            let total = 0
+            let distribuicaoDeDespesas = []
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "despesa") {
+                    total += lancamento.valor
+                }
+            }
+            for(lancamento of lancamentos) {
+                if (lancamento.tipo === "despesa") {
+                    percentual = arredondar((lancamento.valor * 100) / total)
+                    distribuicaoDeDespesas.push({categoria: lancamento.categoria, percentual })
+                }    
+            }
+            return distribuicaoDeDespesas
+        }
+        
+        function arredondar(saldo) {
+            return Math.round(saldo * 100) / 100
+        }
+
+        function calcularRendimento(totalMensal) {
+             return totalMensal.saldo * 0.005
+        }
+
+        function calcularDivida(totalMensal) {
+            return totalMensal.saldo * 0.01
+        }
+
+        function calcularSaldo(mes, saldoInicial, lancamentos) {
+            console.log(mes)
+            totalMensal = {saldo: 0, saldoInicial, receita: 0, despesa: 0, juros: 0, rendimentos: 0, distribuicaoDeDespesas: gastoPorCategoria(lancamentos)}
+            totalMensal.saldo = saldoInicial
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "receita") {
+                    totalMensal.saldo += lancamento.valor
+                    totalMensal.receita += lancamento.valor
+                }
+                if (lancamento.tipo === "despesa") {
+                    totalMensal.saldo -= lancamento.valor
+                    totalMensal.despesa += lancamento.valor
+                }
+            }
+
+            totalMensal.saldo = arredondar(totalMensal.saldo)
+            estaPositivo = totalMensal.saldo > 0
+            if (estaPositivo) {
+                totalMensal.rendimentos = arredondar(calcularRendimento(totalMensal))
+                console.log(totalMensal)
+                return arredondar(totalMensal.saldo += totalMensal.rendimentos)
+            } else {
+                totalMensal.juros = arredondar(calcularDivida(totalMensal))
+                console.log(totalMensal)
+                return arredondar(totalMensal.saldo += totalMensal.juros)
+            }
+        }
+
+        //Janeiro
+        saldoInicial1 = 0
+        lancamentoJaneiro = [
+            new Lancamento("Salario","receita",5000 ),
+            new Lancamento("Alimentacao","despesa",1000 ),
+            new Lancamento("Transporte","despesa",400 ),
+            new Lancamento("Internet","despesa",170 ),
+            new Lancamento("Luz","despesa",600 ),
+            new Lancamento("Agua","despesa",150 ),
+            new Lancamento("Lazer","despesa",300 ),
+            new Lancamento("Show do BTS e SKZ","despesa",400 )
+        ]
+        totalMensal1 = calcularSaldo("Janeiro", saldoInicial1, lancamentoJaneiro)
+        gastoPorCategoria1 = gastoPorCategoria(lancamentoJaneiro)
+    
+        
+        // Fevereiro
+        lancamentoFevereiro = [
+            new Lancamento ("Salario","receita", 5000 ),
+            new Lancamento ("Alimentacao","despesa", 1500 ),
+            new Lancamento ("Transporte","despesa", 800 ),
+            new Lancamento ("Internet","despesa", 170 ),
+            new Lancamento ("Luz","despesa", 800 ),
+            new Lancamento ("Agua","despesa", 150 ),
+            new Lancamento ("Lazer","despesa", 200 ),
+            new Lancamento ("Show do BTS e SKZ","despesa", 600 )
+        ]
+        totalMensal2 = calcularSaldo("Fevereiro", totalMensal1, lancamentoFevereiro)
+        gastoPorCategoria2 = gastoPorCategoria(lancamentoFevereiro)
+
+        // Março
+        lancamentoMarco = [
+            new Lancamento("Salario","receita", 5000),
+            new Lancamento("Alimentacao","despesa", 1500),
+            new Lancamento("Transporte","despesa", 800),
+            new Lancamento("Internet","despesa", 170),
+            new Lancamento("Luz","despesa", 800),
+            new Lancamento("Agua","despesa", 150),
+            new Lancamento("Lazer","despesa", 200),
+            new Lancamento("Show do BTS e SKZ","despesa", 600)
+        ]
+        totalMensal3 = calcularSaldo("Março", totalMensal2, lancamentoMarco)
+        gastoPorCategoria3 = gastoPorCategoria(lancamentoMarco)
+
+        console.log("Seu saldo total foi de")
+        saldot = totalMensal3
+        console.log(arredondar(saldot))
+
+    </script>
+</body>
+
+</html>
