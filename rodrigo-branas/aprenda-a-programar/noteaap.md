@@ -38,13 +38,16 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   * var = **EVITAR SEMPRE USAR**
   * let = permite reatribuição
   * const = não permite reatribuição.
-* 
+  
+  this.qualquercoisa = qualquer coisa (estado interno dele na class)
+  para chamar metodos dentro da class, você precisa usar o this também.
   
   ### Exercício referente a aula:
   - [ ] Colocar *const* onde precisa no código.
-  - [ ] colocar ; depois de instruções (opcional, mas use).
-  - [ ] criar a class Mes.
-  - [ ] teste no final com o valor do mês.
-  - [ ] arrumar as funções na class mes.
-  - [ ] separar em lancamento, mes, util, teste, index(dados) em outras "abas" e importar para o arquivo index.
+  - [x] colocar ; depois de instruções (opcional, mas use).
+  - [x] criar a class Mes.
+  - [x] teste no final com o valor do mês.
+  - [x] arrumar as funções na class mes.
+  - [x] separar em lancamento, mes, util, teste, index(dados) em outras "abas" e importar para o arquivo index.
+  - [ ] otimizar os metodos dentro da class mes.
   
