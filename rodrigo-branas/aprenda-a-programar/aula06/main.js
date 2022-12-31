@@ -30,17 +30,22 @@ marco.adicionarLancamentos(new Lancamento("Luz", "despesa", 800));
 marco.adicionarLancamentos(new Lancamento("Agua", "despesa", 150));
 marco.adicionarLancamentos(new Lancamento("Lazer", "despesa", 200));
 marco.adicionarLancamentos(new Lancamento("Show do BTS e SKZ", "despesa", 600));
+// Abril
+const abril = new Mes("Abril");
+abril.adicionarLancamentos(new Lancamento("Salario", "receita", 5000));
+abril.adicionarLancamentos(new Lancamento("Show do BTS e SKZ", "despesa", 600));
+// Maio
+const maio = new Mes("Maio");
 
+// Ano
 const ano = new Ano();
 ano.adicionarMes(janeiro);
 ano.adicionarMes(fevereiro);
 ano.adicionarMes(marco);
+ano.adicionarMes(abril);
+ano.adicionarMes(maio);
 ano.calcularSaldo();
-
-
 
 janeiro.adicionarLancamentos(new Lancamento("Curso Udemy - como ganhar 5k todo dia virando dev em 6 meses", "despesa", 400));
 ano.calcularSaldo();
-console.log(janeiro);
-console.log(fevereiro);
-console.log(marco);
+console.log(ano.meses);
