@@ -43,11 +43,21 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   para chamar metodos dentro da class, você precisa usar o this também.
   
   ### Exercício referente a aula:
-  - [ ] Colocar *const* onde precisa no código.
+  - [x] Colocar *const* onde precisa no código.
   - [x] colocar ; depois de instruções (opcional, mas use).
   - [x] criar a class Mes.
   - [x] teste no final com o valor do mês.
   - [x] arrumar as funções na class mes.
   - [x] separar em lancamento, mes, util, teste, index(dados) em outras "abas" e importar para o arquivo index.
-  - [ ] otimizar os metodos dentro da class mes.
+  - [x] otimizar os metodos dentro da class mes.
   
+  # aula 06 - manipulando a DOM
+
+  
+Exercícios referentes a aula:
+- [ ] adicionar ;
+- [ ] ver o saldoInicial
+- [ ] totalMensal dentro do calculoSaldo
+- [ ] criar class Ano
+- [ ] scripts no head
+- [ ] 
