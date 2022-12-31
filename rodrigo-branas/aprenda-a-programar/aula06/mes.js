@@ -1,27 +1,27 @@
 class Mes {
-    constructor(nome, saldoInicial) {
+    constructor(nome) {
         if (nome === "") {
             throw new Error("Mês precisa de um nome");
         }
         this.nome = nome;
-        this.saldoInicial = saldoInicial;
-        this.totalMensal = { saldo: 0, saldoInicial, receita: 0, despesa: 0, juros: 0, rendimentos: 0, distribuicao: 0 }
+        this.saldoInicial = 0;
+        this.totalMensal = { saldo: 0, receita: 0, despesa: 0, juros: 0, rendimentos: 0, distribuicao: 0 };
         this.lancamentos = [];
     }
 
-    adicionarLancamentos(lancamento) {
+    adicionarLancamentos (lancamento) {
         this.lancamentos.push(lancamento);
     }
 
-    calcularRendimento() {
+    calcularRendimento () {
         return this.totalMensal.saldo * 0.005;
     }
 
-    calcularDivida() {
+    calcularDivida () {
         return this.totalMensal.saldo * 0.01;
     }
 
-    gastoPorCategoria() {
+    gastoPorCategoria () {
         this.totalMensal.distribuicao= [];
         for (const lancamento of this.lancamentos) {
             if (lancamento.tipo === "despesa") {
@@ -31,7 +31,8 @@ class Mes {
         }   
     }
 
-    calcularSaldo() {
+    calcularSaldo () {
+        this.totalMensal = { saldo: 0, receita: 0, despesa: 0, juros: 0, rendimentos: 0, distribuicao: 0 };
         this.totalMensal.saldo = this.saldoInicial;
         this.apurarReceitas();
         this.apurarDespesas();
@@ -57,7 +58,7 @@ class Mes {
             }
     }
 
-    apurarRendimentos() {
+    apurarRendimentos () {
         if (this.totalMensal.saldo > 0) {
             this.totalMensal.rendimentos = arredondar(this.calcularRendimento());
             this.totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.rendimentos);
@@ -65,7 +66,7 @@ class Mes {
         }
     }
 
-    apurarJuros() {
+    apurarJuros () {
         if (this.totalMensal.saldo < 0) {
             totalMensal.juros = arredondar(this.calcularDivida());
             totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.juros);

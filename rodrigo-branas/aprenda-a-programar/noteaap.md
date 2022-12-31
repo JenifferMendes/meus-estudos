@@ -56,8 +56,8 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   
 Exercícios referentes a aula:
 - [ ] adicionar ;
-- [ ] ver o saldoInicial
+- [x] ver o saldoInicial
 - [ ] totalMensal dentro do calculoSaldo
 - [ ] criar class Ano
-- [ ] scripts no head
+- [ ] scripts no head;(deixar por ultimo)
 - [ ] 
