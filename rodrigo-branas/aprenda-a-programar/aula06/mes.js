@@ -68,9 +68,9 @@ class Mes {
 
     apurarJuros () {
         if (this.totalMensal.saldo < 0) {
-            totalMensal.juros = arredondar(this.calcularDivida());
-            totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.juros);
-            return totalMensal;
+            this.totalMensal.juros = arredondar(this.calcularDivida());
+            this.totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.juros);
+            return this.totalMensal;
         }
     }
 

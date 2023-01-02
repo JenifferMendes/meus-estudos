@@ -53,11 +53,19 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
   
   # aula 06 - manipulando a DOM
 
-  
+` pai.appendChild(filho)`  
+adiciona um "filho" no final do elemento pai;
+para aplicar estilo, você tem que 'fingir' que o elemento já existe.
+
+
+VSCode  
+dica: selecione a variavel que você deseja trocar o nome, aperte f2, coloque o outro nome que deseja renomear.
+
 Exercícios referentes a aula:
 - [ ] adicionar ;
 - [x] ver o saldoInicial
-- [ ] totalMensal dentro do calculoSaldo
-- [ ] criar class Ano
+- [x] totalMensal dentro do calculoSaldo
+- [x] criar class Ano
 - [ ] scripts no head;(deixar por ultimo)
-- [ ] 
+
+

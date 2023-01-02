@@ -8,6 +8,16 @@ class Ano {
         this.meses.push(mes);
     }
 
+    adicionarLancamento (nomeDoMes, lancamento) {
+        for (const mes of this.meses) {
+            if(mes.nome.toUpperCase() === nomeDoMes.toUpperCase()) {
+                mes.adicionarLancamentos(lancamento);
+                return;
+            } 
+        }
+        console.log("você errou" + nomeDoMes)
+    }
+
     calcularSaldo() {
         let saldoInicial = 0
         for(const mes of this.meses) {
