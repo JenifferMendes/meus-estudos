@@ -71,3 +71,10 @@ Exercícios referentes a aula:
 - [ ] scripts no head;(deixar por ultimo)
 
 # aula 07 - estilizando elementos com CSS
+
+
+
+
+
+## ideias para melhorar a aplicação:
+https://www.w3schools.com/howto/howto_js_tabs.asp

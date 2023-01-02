@@ -82,16 +82,16 @@ function renderizar () {
         }
 
         const linhaJuros = document.createElement("tr");
-        addElement(linhaJuros, "td", "Juros");
-        addElement(linhaJuros, "td", mes.totalMensal.juros);
+        addElement(linhaJuros, "th", "Juros");
+        addElement(linhaJuros, "th", mes.totalMensal.juros);
 
         const linhaRendimentos = document.createElement("tr");
-        addElement(linhaRendimentos, "td", "Rendimentos");
-        addElement(linhaRendimentos, "td", mes.totalMensal.rendimentos);
+        addElement(linhaRendimentos, "th", "Rendimentos");
+        addElement(linhaRendimentos, "th", mes.totalMensal.rendimentos);
 
         const linhaSaldo = document.createElement("tr");
-        addElement(linhaSaldo, "td", "TOTAL MENSAL");
-        addElement(linhaSaldo, "td", mes.totalMensal.saldo);
+        addElement(linhaSaldo, "th", "TOTAL MENSAL");
+        addElement(linhaSaldo, "th", mes.totalMensal.saldo);
 
         tabelaLancamentos.appendChild(linhaJuros);
         tabelaLancamentos.appendChild(linhaRendimentos);
