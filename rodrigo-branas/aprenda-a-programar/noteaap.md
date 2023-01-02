@@ -57,6 +57,8 @@ Objetivo do curso: Criar uma aplicação voltado ao financeiro e entender a roti
 adiciona um "filho" no final do elemento pai;
 para aplicar estilo, você tem que 'fingir' que o elemento já existe.
 
+https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild
+
 
 VSCode  
 dica: selecione a variavel que você deseja trocar o nome, aperte f2, coloque o outro nome que deseja renomear.
@@ -68,4 +70,4 @@ Exercícios referentes a aula:
 - [x] criar class Ano
 - [ ] scripts no head;(deixar por ultimo)
 
-
+# aula 07 - estilizando elementos com CSS

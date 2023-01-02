@@ -1,0 +1,74 @@
+@charset "utf-8";
+:root {
+    --color1: #A077D9;
+    --color2: #D2BBF2;
+    --color3: #F2CEEC;
+    --color4: #C2F2ED;
+    --color5: #F2B9AC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color1);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--color5);
+}
+
+.lancamento {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+    width: 300px;
+    background-color: #48375f;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+input {
+    width: 100%;
+    border: 1px solid #48375f;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-indent: 5px; 
+}
+
+select {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-indent: 5px;
+}
+
+option {
+    background-color: var(--color3);
+    text-indent: 5px;  
+}
+
+button {
+    width: 100%;
+    background-color: var(--color5);
+    color: rgb(253, 240, 240);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tabela-lancamentos {
+    border: 1px solid black;
+    width: 600px;
+    background-color: var(--color3);
+    color: black;
+}
+
+/* #app > h3 {
+    text-align: center;
+} */
