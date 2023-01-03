@@ -65,63 +65,33 @@ function renderizar () {
         app.firstChild.remove();
     }
     const painel = document.createElement("div");
-    const cores = ["purple","blue","yellow","orange", "red"];
-    const grafico = document.createElement("div");
-    grafico.className = "grafico";
+   
+    const grafico = new Grafico();
     for (const mes of ano.meses) {
-        const coluna = document.createElement("div");
-        coluna.className = "grafico-coluna";
-        const cor = document.createElement("div");
-        cor.style.height = (mes.totalMensal.saldo * 100)/10000 + "px";
-        cor.style.background = cores.pop();
-        coluna.appendChild(cor);
-        const nomeDoMes = document.createElement("div");
-        nomeDoMes.innerText = mes.nome;
-        coluna.appendChild(cor);
-        coluna.appendChild(nomeDoMes);
-        grafico.appendChild(coluna);
+        grafico.adicionarColuna(mes.totalMensal.saldo, mes.nome);
     }
-
-    painel.appendChild(grafico);
+    painel.appendChild(grafico.element);
 
     for (const mes of ano.meses) {
         addElement(painel,"h2", mes.nome);
-        const tabelaLancamentos = document.createElement("table");
-        tabelaLancamentos.className = "tabela-lancamentos";
-        
-        const cabecalho = document.createElement("tr");
-        addElement(cabecalho, "th", "Categoria");
-        addElement(cabecalho, "th", "Valor");
-        tabelaLancamentos.appendChild(cabecalho);
-        for( const lancamento of mes.lancamentos) {
-            const linhaLancamento = document.createElement("tr");
-            addElement(linhaLancamento, "td", lancamento.categoria);
-            addElement(linhaLancamento, "td", formatarDinheiro(lancamento.valor));
-            tabelaLancamentos.appendChild(linhaLancamento);
+       
+        const tabelaLancamento = new Tabela ("tabela-lancamentos");
+        tabelaLancamento.addRow("th", ["CATEGORIA", "VALOR"]);
+        for (const lancamento of mes.lancamentos) {
+            tabelaLancamento.addRow("td",[lancamento.categoria, formatarDinheiro(lancamento.getValorString())]);
         }
-
-        const linhaJuros = document.createElement("tr");
-        addElement(linhaJuros, "th", "Juros");
-        addElement(linhaJuros, "th", formatarDinheiro(mes.totalMensal.juros));
-
-        const linhaRendimentos = document.createElement("tr");
-        addElement(linhaRendimentos, "th", "Rendimentos");
-        addElement(linhaRendimentos, "th", formatarDinheiro(mes.totalMensal.rendimentos));
-
-        const linhaSaldo = document.createElement("tr");
-        addElement(linhaSaldo, "th", "TOTAL MENSAL");
-        addElement(linhaSaldo, "th", formatarDinheiro(mes.totalMensal.saldo));
-
-        tabelaLancamentos.appendChild(linhaJuros);
-        tabelaLancamentos.appendChild(linhaRendimentos);
-        tabelaLancamentos.appendChild(linhaSaldo);
-        painel.appendChild(tabelaLancamentos);
+        tabelaLancamento.addRow("th", ["Juros", formatarDinheiro(mes.totalMensal.juros)]);
+        tabelaLancamento.addRow("th", ["Rendimentos", formatarDinheiro(mes.totalMensal.rendimentos)]);
+        tabelaLancamento.addRow("th", ["TOTAL MENSAL", formatarDinheiro(mes.totalMensal.saldo)]);
+        
+        painel.appendChild(tabelaLancamento.element);
         painel.appendChild(document.createElement("hr"));
     }
     app.appendChild(painel)
 }
 
 renderizar();
+
 function adicionarLancamentos() {
     const valor = document.getElementById("valor");
     const categoria = document.getElementById("categoria");
@@ -143,6 +113,7 @@ botao.addEventListener("click", adicionarLancamentos);
 const mesSelect = document.getElementById("mes");
 for (const mes of ano.meses) {
     addElement(mesSelect, "option", mes.nome);
+
     //const option = document.createElement("option")
     //option.text = mes.nome;
     //mesSelect.add(option);

@@ -74,3 +74,5 @@ Exercícios referentes a aula:
 
 ## ideias para melhorar a aplicação:
 https://www.w3schools.com/howto/howto_js_tabs.asp
+
+# aula 08 - Componentização.
