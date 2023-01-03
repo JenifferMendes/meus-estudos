@@ -72,9 +72,5 @@ Exercícios referentes a aula:
 
 # aula 07 - estilizando elementos com CSS
 
-
-
-
-
 ## ideias para melhorar a aplicação:
 https://www.w3schools.com/howto/howto_js_tabs.asp
