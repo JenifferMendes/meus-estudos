@@ -89,3 +89,13 @@ https://www.w3schools.com/howto/howto_js_tabs.asp
 * regras de negócio
 * mediação do armazenamento dos dados
 
+terminal:
+node oquevcquerquerode
+ctrl + c = para tudo no terminal.
+
+shift + tab = volta o espaço.
+tab = vai o espaço.
+shift + alt + f = formata bonitinho
+ctrl + backspace apaga a palavra inteira
+Shift + insert é o CTRL + V no terminal, caso seu CTRL + V não funcione
+ctrl + seta = pula palavra
