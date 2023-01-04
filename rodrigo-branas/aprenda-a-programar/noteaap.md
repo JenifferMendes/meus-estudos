@@ -76,3 +76,16 @@ Exercícios referentes a aula:
 https://www.w3schools.com/howto/howto_js_tabs.asp
 
 # aula 08 - Componentização.
+
+# aula 09 - Frontend e Backend.
+
+## Frontend
+* apresentação
+* usabilidade ?
+* interação com usuário
+
+
+## Backend
+* regras de negócio
+* mediação do armazenamento dos dados
+

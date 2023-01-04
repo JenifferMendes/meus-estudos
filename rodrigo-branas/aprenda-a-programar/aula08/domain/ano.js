@@ -15,7 +15,6 @@ class Ano {
                 return;
             } 
         }
-        console.log("você errou" + nomeDoMes)
     }
 
     calcularSaldo() {

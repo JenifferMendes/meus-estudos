@@ -9,6 +9,10 @@ class Mes {
         this.lancamentos = [];
     }
 
+    arredondar(saldo) {
+        return Math.round(saldo * 100) / 100;
+    }
+
     adicionarLancamentos (lancamento) {
         this.lancamentos.push(lancamento);
     }
@@ -25,7 +29,7 @@ class Mes {
         this.totalMensal.distribuicao= [];
         for (const lancamento of this.lancamentos) {
             if (lancamento.tipo === "despesa") {
-                const percentual = arredondar((lancamento.valor * 100) / this.totalMensal.despesa);
+                const percentual = this.arredondar((lancamento.valor * 100) / this.totalMensal.despesa);
                 this.totalMensal.distribuicao.push({ categoria: lancamento.categoria, percentual });
             }
         }   
@@ -60,16 +64,16 @@ class Mes {
 
     apurarRendimentos () {
         if (this.totalMensal.saldo > 0) {
-            this.totalMensal.rendimentos = arredondar(this.calcularRendimento());
-            this.totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.rendimentos);
+            this.totalMensal.rendimentos = this.arredondar(this.calcularRendimento());
+            this.totalMensal.saldo = this.arredondar(this.totalMensal.saldo += this.totalMensal.rendimentos);
             return this.totalMensal;
         }
     }
 
     apurarJuros () {
         if (this.totalMensal.saldo < 0) {
-            this.totalMensal.juros = arredondar(this.calcularDivida());
-            this.totalMensal.saldo = arredondar(this.totalMensal.saldo += this.totalMensal.juros);
+            this.totalMensal.juros = this.arredondar(this.calcularDivida());
+            this.totalMensal.saldo = this.arredondar(this.totalMensal.saldo += this.totalMensal.juros);
             return this.totalMensal;
         }
     }

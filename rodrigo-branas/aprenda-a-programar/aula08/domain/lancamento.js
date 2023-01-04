@@ -16,11 +16,6 @@ class Lancamento {
     }
 
     getValorString () {
-        // if (this.tipo === "despesa") {
-        //     return this.valor * -1
-        // } else {
-        //    return this.valor 
-        // }
-        return this.valor = (this.tipo === "receita")  ? this.valor : this.valor * -1
+        return (this.tipo === "despesa")  ? this.valor * -1 : this.valor; 
     }   
 }

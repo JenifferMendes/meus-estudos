@@ -49,18 +49,22 @@ class Tela {
         this.ano = ano;
     }
 
+    formatarDinheiro(valor) {
+        return new Intl.NumberFormat("pt-br", {currency: "BRL", style: "currency"}).format(valor);
+    }
+
     adicionarLancamentos() {
-        const valor = document.getElementById("valor");
-        const categoria = document.getElementById("categoria");
-        const tipo = document.getElementById("tipo");
         const mes = document.getElementById("mes");
-        this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value, Number(valor.value)));
+        const tipo = document.getElementById("tipo");
+        const categoria = document.getElementById("categoria");
+        const valor = document.getElementById("valor");
+        this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value, parseFloat(valor.value)));
         this.ano.calcularSaldo();
         this.renderizar();
+        document.getElementById("mes").value = this.ano.meses[0].nome;
+        document.getElementById("tipo").value = "receita";
         document.getElementById("valor").value = "";
         document.getElementById("categoria").value = "";
-        document.getElementById("tipo").value = "receita";
-        document.getElementById("mes").value = this.ano.meses[0].nome;
     }
 
     renderizar () {
@@ -109,11 +113,11 @@ class Tela {
             const tabelaLancamento = new Tabela ("tabela-lancamentos");
             tabelaLancamento.addRow("th", ["CATEGORIA", "VALOR"]);
             for (const lancamento of mes.lancamentos) {
-                tabelaLancamento.addRow("td",[lancamento.categoria, formatarDinheiro(lancamento.getValorString())]);
+                tabelaLancamento.addRow("td",[lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())]);
             }
-            tabelaLancamento.addRow("th", ["Juros", formatarDinheiro(mes.totalMensal.juros)]);
-            tabelaLancamento.addRow("th", ["Rendimentos", formatarDinheiro(mes.totalMensal.rendimentos)]);
-            tabelaLancamento.addRow("th", ["TOTAL MENSAL", formatarDinheiro(mes.totalMensal.saldo)]);
+            tabelaLancamento.addRow("th", ["Juros", this.formatarDinheiro(mes.totalMensal.juros)]);
+            tabelaLancamento.addRow("th", ["Rendimentos", this.formatarDinheiro(mes.totalMensal.rendimentos)]);
+            tabelaLancamento.addRow("th", ["TOTAL MENSAL", this.formatarDinheiro(mes.totalMensal.saldo)]);
             
             app.adicionarElementoFilho(tabelaLancamento.element);
             app.adicionarElementoFilho(document.createElement("hr"));
