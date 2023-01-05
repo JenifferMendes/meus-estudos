@@ -99,3 +99,4 @@ shift + alt + f = formata bonitinho
 ctrl + backspace apaga a palavra inteira
 Shift + insert é o CTRL + V no terminal, caso seu CTRL + V não funcione
 ctrl + seta = pula palavra
+tab completa no terminal

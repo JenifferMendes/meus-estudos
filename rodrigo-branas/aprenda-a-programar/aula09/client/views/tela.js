@@ -1,6 +1,23 @@
 class Tela {
     constructor() {
-        
+        this.init();
+    }
+
+    async init() {
+        const response = await fetch("http://localhost:3000/api/lancamentos");
+        const lancamentos = await response.json();
+        const ano = new Ano();
+        ano.adicionarMes(new Mes("janeiro"));
+        ano.adicionarMes(new Mes("fevereiro"));
+        ano.adicionarMes(new Mes("marco"));
+        ano.adicionarMes(new Mes("abril"));
+        ano.adicionarMes(new Mes("maio"));
+        for (const lancamento of lancamentos) {
+            ano.adicionarLancamento(lancamento.mes, new Lancamento(lancamento.categoria, lancamento.tipo, lancamento.valor))
+        }
+        this.ano = ano;
+        ano.calcularSaldo();
+        this.renderizar();
     }
 
     formatarDinheiro(valor) {
@@ -13,6 +30,7 @@ class Tela {
         const categoria = document.getElementById("categoria");
         const valor = document.getElementById("valor");
         this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value, parseFloat(valor.value)));
+        fetch("http://localhost:3000/api/lancamentos", { method: "post", headers: { "content-type": "application/json" }, body:  JSON.stringify({mes: mes.value, tipo: tipo.value, categoria: categoria.value, valor: parseFloat(valor.value)})});
         this.ano.calcularSaldo();
         this.renderizar();
         document.getElementById("mes").value = this.ano.meses[0].nome;
