@@ -105,4 +105,22 @@ node --watch server.js
 ctrl j -abre e fecha o terminal
 shift+alt + seta cima/baixo
 
-# aula 10 -
+# aula 10 - Banco de dados.
+
+drop -> apaga a tabela.
+delete -> apaga registro.
+voltar na aula no tempo: 35:15 e tentar acessar o banco de dados via terminal
+
+# aula 11 - Definindo camadas e responsabilidades no backend.
+
+responsabilidades:
+* ponto de entrada da aplicação
+* conexão com o banco de dados
+* definição dos serviços da api (application programming interface)
+* interação com o banco de dados
+* configuração das rotas da api e abertura do servidor numa porta específica.
+
+
+SRP - Single Responsibility Principle(evitar a fragilidade por conta das mudanças constantes e do acoplado que existe entre essas responsabilidades) 
+
+Separe coisas que mudam por motivos diferentes.

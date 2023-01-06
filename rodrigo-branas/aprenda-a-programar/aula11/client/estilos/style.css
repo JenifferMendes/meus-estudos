@@ -1,0 +1,112 @@
+@charset "utf-8";
+:root {
+    --color1: #A077D9;
+    --color2: #D2BBF2;
+    --color3: #F2CEEC;
+    --color4: #C2F2ED;
+    --color5: #F2B9AC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color1);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--color5);
+}
+
+.lancamento {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+    width: 200px;
+    background-color: #48375f;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+input {
+    width: 100%;
+    border: 1px solid #48375f;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-indent: 5px;
+    padding: 5px; 
+}
+
+select {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px; 
+}
+
+option {
+    background-color: var(--color3);
+     
+}
+
+button {
+    width: 100%;
+    background-color: var(--color5);
+    color: rgb(253, 240, 240);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.grafico {
+    width: 600px;
+    height: 200px;
+    border: 1px solid #48375f;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.grafico-coluna {
+    width: 100px;
+    text-align: center;
+}
+
+.grafico-nomedomes {
+    width: 100%;
+}
+
+.tabela-lancamentos {
+    width: 600px;
+    background-color: var(--color3);
+    color: black;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 4px solid var(--color5);
+}
+
+.tabela-lancamentos tr:nth-child(even){
+    background-color: var(--color2);
+}
+th {
+    background-color: var(--color4);
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+
+/* #app > h3 {
+    text-align: center;
+} */
