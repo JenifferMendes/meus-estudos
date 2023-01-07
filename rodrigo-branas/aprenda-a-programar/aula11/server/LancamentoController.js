@@ -13,7 +13,7 @@ class LancamentoController {
 
         httpServer.register("delete", "/api/lancamentos/:idLancamento", async function(params, body) {
             const idLancamento = params.idLancamento;
-            await lancamentoData.deleteLancamentos(idLancamento);
+            await lancamentoData.deleteLancamento(idLancamento);
         });
 
     }

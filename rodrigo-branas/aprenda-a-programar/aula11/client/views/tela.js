@@ -18,7 +18,6 @@ class Tela {
         this.ano = ano;
         ano.calcularSaldo();
         this.renderizar();
-        console.log(ano);
     }
 
     formatarDinheiro(valor) {
@@ -89,11 +88,16 @@ class Tela {
             const nomeDoMes = new h2(mes.nome);
             app.adicionarElementoFilho(nomeDoMes.element)
             const tabelaLancamento = new Tabela ("tabela-lancamentos");
-            tabelaLancamento.addRow("th", ["ID", "CATEGORIA", "VALOR"]);
+            tabelaLancamento.addRow("th", ["CATEGORIA", "VALOR"]);
             for (const lancamento of mes.lancamentos) {
-                // console.log(lancamento);
-                tabelaLancamento.addRow("td",[lancamento.idLancamento, lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())]);
+                const button = new Button("delete-lancamento", "delete-lancamento", "delete");
+                button.addListener(()=> {
+                    this.deletarLancamentos(lancamento.idLancamento);
+                });
+
+                tabelaLancamento.addRow("td", [ lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())],[button] );
             }
+
             tabelaLancamento.addRow("th", ["Juros", this.formatarDinheiro(mes.totalMensal.juros)]);
             tabelaLancamento.addRow("th", ["Rendimentos", this.formatarDinheiro(mes.totalMensal.rendimentos)]);
             tabelaLancamento.addRow("th", ["TOTAL MENSAL", this.formatarDinheiro(mes.totalMensal.saldo)]);
