@@ -1,6 +1,6 @@
 class Lancamento {
 
-    constructor(id, mes, categoria, tipo, valor) {
+    constructor(idLancamento, mes, categoria, tipo, valor) {
         this.idLancamento = idLancamento;
         this.mes = mes;
         if (categoria === "") {

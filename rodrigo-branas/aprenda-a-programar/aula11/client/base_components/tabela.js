@@ -4,13 +4,17 @@ class Tabela {
         this.element.className = className;
     }
 
-    addRow(type, values) {
+    addRow(type, values, actions) {
         const tr = document.createElement("tr");
         for (const value of values) {
             const td = document.createElement(type);
             td.innerText = value;
             tr.appendChild(td);
         }
+
+
+
+        
         this.element.appendChild(tr);
     }
 }

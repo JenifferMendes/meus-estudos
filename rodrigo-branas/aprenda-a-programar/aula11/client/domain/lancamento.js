@@ -2,6 +2,7 @@ class Lancamento {
 
     constructor(categoria, tipo, valor, idLancamento ) {
         if (categoria === "") {
+        
             throw new Error("A Categoria é obrigatório!");
         }
         if (tipo !== "despesa" && tipo !== "receita") {
