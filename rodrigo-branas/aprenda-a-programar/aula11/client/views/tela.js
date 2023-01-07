@@ -39,6 +39,11 @@ class Tela {
         document.getElementById("categoria").value = "";
     }
 
+    deletarLancamentos(idLancamento) {
+        fetch(`http://localhost:3000/api/lancamentos/${idLancamento}`, { method: "delete"});
+        this.ano.calcularSaldo();
+        this.renderizar();
+    }
     renderizar () {
         document.getElementById("app").remove();
         const app = new Div("app");
@@ -83,9 +88,9 @@ class Tela {
             app.adicionarElementoFilho(nomeDoMes.element)
            
             const tabelaLancamento = new Tabela ("tabela-lancamentos");
-            tabelaLancamento.addRow("th", ["CATEGORIA", "VALOR"]);
+            tabelaLancamento.addRow("th", ["iD", "CATEGORIA", "VALOR"]);
             for (const lancamento of mes.lancamentos) {
-                tabelaLancamento.addRow("td",[lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())]);
+                tabelaLancamento.addRow("td",[lancamento.idLancamento, lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())]);
             }
             tabelaLancamento.addRow("th", ["Juros", this.formatarDinheiro(mes.totalMensal.juros)]);
             tabelaLancamento.addRow("th", ["Rendimentos", this.formatarDinheiro(mes.totalMensal.rendimentos)]);

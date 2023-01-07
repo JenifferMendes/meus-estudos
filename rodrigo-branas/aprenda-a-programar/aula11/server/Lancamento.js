@@ -1,6 +1,8 @@
 class Lancamento {
 
-    constructor(categoria, tipo, valor, idLancamento ) {
+    constructor(id, mes, categoria, tipo, valor) {
+        this.idLancamento = idLancamento;
+        this.mes = mes;
         if (categoria === "") {
             throw new Error("A Categoria é obrigatório!");
         }
@@ -13,10 +15,7 @@ class Lancamento {
         this.categoria = categoria;
         this.tipo = tipo;
         this.valor = valor;
-        this.idLancamento = idLancamento;
-    }
-
-    getValorString () {
-        return (this.tipo === "despesa")  ? this.valor * -1 : this.valor; 
-    }   
+    } 
 }
+
+module.exports = Lancamento;

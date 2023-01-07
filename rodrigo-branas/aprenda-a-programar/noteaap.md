@@ -109,7 +109,8 @@ shift+alt + seta cima/baixo
 
 drop -> apaga a tabela.
 delete -> apaga registro.
-voltar na aula no tempo: 35:15 e tentar acessar o banco de dados via terminal
+
+voltar na aula no tempo: 35:15 e tentar acessar o banco de dados via terminal // pesquisar e entender como funciona pro postgresql
 
 # aula 11 - Definindo camadas e responsabilidades no backend.
 
@@ -124,3 +125,7 @@ responsabilidades:
 SRP - Single Responsibility Principle(evitar a fragilidade por conta das mudanças constantes e do acoplado que existe entre essas responsabilidades) 
 
 Separe coisas que mudam por motivos diferentes.
+
+DIP - Dependency Inversion Principle
+
+High level modules should not depend on low level modules.
