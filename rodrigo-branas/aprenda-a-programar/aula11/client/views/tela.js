@@ -30,7 +30,7 @@ class Tela {
         const categoria = document.getElementById("categoria");
         const valor = document.getElementById("valor");
         this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value, parseFloat(valor.value)));
-        fetch("http://localhost:3000/api/lancamentos", { method: "post", headers: { "content-type": "application/json" }, body:  JSON.stringify({mes: mes.value, tipo: tipo.value, categoria: categoria.value, valor: parseFloat(valor.value)})});
+        fetch("http://localhost:3000/api/lancamentos", { method: "post", headers: { "content-type": "application/json" }, body:  JSON.stringify({mes: mes.value, tipo: tipo.value, categoria: categoria.value, valor: parseFloat(valor.value) }) }).catch(error => console.log(error));
         this.ano.calcularSaldo();
         this.renderizar();
         document.getElementById("mes").value = this.ano.meses[0].nome;
@@ -41,8 +41,6 @@ class Tela {
 
     deletarLancamentos(idLancamento) {
         fetch(`http://localhost:3000/api/lancamentos/${idLancamento}`, { method: "delete"});
-        this.ano.calcularSaldo();
-        this.renderizar();
     }
     renderizar () {
         document.getElementById("app").remove();
@@ -84,7 +82,6 @@ class Tela {
         app.adicionarElementoFilho(grafico.element);
     
         for (const mes of this.ano.meses) {
-            // console.log(mes);
             const nomeDoMes = new h2(mes.nome);
             app.adicionarElementoFilho(nomeDoMes.element)
             const tabelaLancamento = new Tabela ("tabela-lancamentos");
@@ -93,8 +90,10 @@ class Tela {
                 const button = new Button("delete-lancamento", "delete-lancamento", "delete");
                 button.addListener(()=> {
                     this.deletarLancamentos(lancamento.idLancamento);
+                    this.ano.deletarLancamento(mes, lancamento);
+                    this.ano.calcularSaldo();
+                    this.renderizar();
                 });
-
                 tabelaLancamento.addRow("td", [ lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())],[button] );
             }
 
