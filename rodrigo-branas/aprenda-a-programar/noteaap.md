@@ -129,3 +129,8 @@ Separe coisas que mudam por motivos diferentes.
 DIP - Dependency Inversion Principle
 
 High level modules should not depend on low level modules.
+
+
+# aula 12 - Encerramento e Próximos passos.
+
+cd .. - volta na pasta

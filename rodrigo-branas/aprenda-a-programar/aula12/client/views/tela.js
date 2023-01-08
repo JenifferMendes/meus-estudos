@@ -1,22 +1,15 @@
 class Tela {
-    constructor() {
-        this.init();
+    constructor(lancamentoService) {
+        this.lancamentoService = lancamentoService;this.init();        
     }
 
     async init() {
-        const response = await fetch("http://localhost:3000/api/lancamentos");
-        const lancamentos = await response.json();
-        const ano = new Ano();
-        ano.adicionarMes(new Mes("janeiro"));
-        ano.adicionarMes(new Mes("fevereiro"));
-        ano.adicionarMes(new Mes("marco"));
-        ano.adicionarMes(new Mes("abril"));
-        ano.adicionarMes(new Mes("maio"));
+        const lancamentos = await this.lancamentoService.getLancamento();
+        this.ano = new Ano();
         for (const lancamento of lancamentos) {
-            ano.adicionarLancamento(lancamento.mes, new Lancamento( lancamento.categoria, lancamento.tipo, parseFloat(lancamento.valor), lancamento.idLancamento));
+            this.ano.adicionarLancamento(lancamento.mes, new Lancamento( lancamento.categoria, lancamento.tipo, parseFloat(lancamento.valor), lancamento.idLancamento));
         }
-        this.ano = ano;
-        ano.calcularSaldo();
+        this.ano.calcularSaldo();
         this.renderizar();
     }
 
@@ -30,7 +23,13 @@ class Tela {
         const categoria = document.getElementById("categoria");
         const valor = document.getElementById("valor");
         this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value, parseFloat(valor.value)));
-        fetch("http://localhost:3000/api/lancamentos", { method: "post", headers: { "content-type": "application/json" }, body:  JSON.stringify({mes: mes.value, tipo: tipo.value, categoria: categoria.value, valor: parseFloat(valor.value) }) }).catch(error => console.log(error));
+        const lancamento = {
+            mes: mes.value, 
+            tipo: tipo.value,
+            categoria: categoria.value,
+            valor: parseFloat(valor.value)
+        }
+        this.lancamentoService.saveLancamento(lancamento);
         this.ano.calcularSaldo();
         this.renderizar();
         document.getElementById("mes").value = this.ano.meses[0].nome;
@@ -39,8 +38,11 @@ class Tela {
         document.getElementById("categoria").value = "";
     }
 
-    deletarLancamentos(idLancamento) {
-        fetch(`http://localhost:3000/api/lancamentos/${idLancamento}`, { method: "delete"});
+    deletarLancamentos(mes, lancamento) {
+        this.lancamentoService.deleteLancamento(lancamento.idLancamento);
+        this.ano.deletarLancamento(mes, lancamento);
+        this.ano.calcularSaldo();
+        this.renderizar();
     }
     renderizar () {
         document.getElementById("app").remove();
@@ -90,10 +92,7 @@ class Tela {
                 const button = new Button("delete-lancamento", "delete-lancamento", "delete");
                 button.addListener(()=> {
                     console.log(lancamento)
-                    this.deletarLancamentos(lancamento.idLancamento);
-                    this.ano.deletarLancamento(mes, lancamento);
-                    this.ano.calcularSaldo();
-                    this.renderizar();
+                    this.deletarLancamentos(mes, lancamento);
                 });
                 tabelaLancamento.addRow("td", [ lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())],[button] );
             }
