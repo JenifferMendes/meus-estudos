@@ -1,19 +1,18 @@
 class LancamentoService {
 
-    constructor () {
+    constructor (httpClient, baseUrl) {
+        this.httpClient = httpClient;
+        this.baseUrl = baseUrl;
 
     }
 
-    async getLancamento () {
-        const response = await fetch("http://localhost:3000/api/lancamentos");
-        return response.json();
+    getLancamento () {
+        return this.httpClient.get(`${this.baseUrl}/api/lancamentos`);
     }
-    async saveLancamento (lancamento) {
-        await fetch("http://localhost:3000/api/lancamentos", { method: "post",
-        headers: { "content-type": "application/json" },
-         body:  JSON.stringify(lancamento)});
+    saveLancamento (lancamento) {
+        return this.httpClient.post(`${this.baseUrl}/api/lancamentos`, lancamento);
     }
-    async deleteLancamento (idLancamento) {
-        await fetch(`http://localhost:3000/api/lancamentos/${idLancamento}`, { method: "delete"});
+    deleteLancamento (idLancamento) {
+        return this.httpClient.delete(`${this.baseUrl}/api/lancamentos/${idLancamento}`)
     }
 }

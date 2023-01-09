@@ -9,4 +9,7 @@ class Select {
         opcao.text = text;
         this.element.appendChild(opcao);
     }
+    getValue() {
+       return this.element.value;
+    }
 }

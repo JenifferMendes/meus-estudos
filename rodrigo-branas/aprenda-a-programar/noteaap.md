@@ -134,3 +134,6 @@ High level modules should not depend on low level modules.
 # aula 12 - Encerramento e Próximos passos.
 
 cd .. - volta na pasta
+
+## próximos passos:
+- [ ] arrumar o CSS da aplicação
