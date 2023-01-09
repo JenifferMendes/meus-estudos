@@ -137,3 +137,16 @@ cd .. - volta na pasta
 
 ## próximos passos:
 - [ ] arrumar o CSS da aplicação
+- [ ] Aprofundar o conhecimento na linguagem JS ou qualquer outra (analisa o mercado)
+- [ ] aprenda um framework/library como react, vue.js e angular
+- [ ] estudar o protocolo HTTP e entender os conceitos de API
+- [ ]  Criar um projeto pessoal e publicar no GitHub(estudar Git)
+- [ ]  Fazer networking, participar de meetups e eventos
+- [ ]  tentar fazer entrevistas e entender seu nivel
+- [ ]  Analise se faz sentindo fazer uma faculdade.
+- [ ]  buscar um mentor, alguém que possa tirar dúvidas e te guiar nesse caminho
+- [ ]  Descubra qual é o melhor método de estudo para você.
+- [ ] métodos: cursos, ler livros e/ou artigos, aprneder a utilizar o stackoverflow.
+- [ ] Entrar em campo
+- [ ] Considere entrar em uma empresa de tecnologia por outra área(atendimento, implantação, vendas) e depois fazer uma transição
+- [ ] Aprender sistemas operacionais, redes e banco de dados (cloud, containers,...)
