@@ -150,3 +150,16 @@ cd .. - volta na pasta
 - [ ] Entrar em campo
 - [ ] Considere entrar em uma empresa de tecnologia por outra área(atendimento, implantação, vendas) e depois fazer uma transição
 - [ ] Aprender sistemas operacionais, redes e banco de dados (cloud, containers,...)
+
+---
+# minha versão 
+
+## próximos passos
+
+- [ ] CSS  
+  
+     - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
+     - [ ] TABELA
+     - [ ] BOTÃO DO MENU (GRAFICO, ANO: NOME DOS MESES)
+     - [ ] APERTAR O BOTÃO DE +, ABRIR O PAINEL DE LANÇAMENTO
+     - [ ] RESPOSIVO
