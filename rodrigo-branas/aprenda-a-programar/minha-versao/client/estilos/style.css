@@ -7,6 +7,7 @@
     --color5: #F2B9AC;
     --color-darkpurple: #241126;
     --color-purple: #6B4D73;
+    --color-lilac: #AF7EBD;
     --color-cyan: #7ABFB8;
     --color-yellow: #F2CA7E;
     --color-black: #0D0D0D;
@@ -134,11 +135,13 @@ option {
 .grafico-coluna {
     display: flex;
     flex-direction: column;
+    /* text-align: center; */
 
 }
 .grafico-coluna-cor{
     height: 20px;
     position: relative;
+    border-radius: 100px;
 }
 .grafico-nomedomes {
     width: 100%;
@@ -160,7 +163,7 @@ option {
 }
 
 .tabela-lancamentos tr:nth-child(even){
-    background-color: var(--color2);
+    background-color: var(--color-lilac);
 }
 th {
     background-color: var(--color-cyan);

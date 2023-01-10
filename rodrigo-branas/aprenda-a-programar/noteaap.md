@@ -159,7 +159,19 @@ cd .. - volta na pasta
 - [ ] CSS  
   
      - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
+       - [ ] CORES
+       - [ ] FUNÇÃO
+       - [ ] OUTROS
+       - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
      - [ ] TABELA
-     - [ ] BOTÃO DO MENU (GRAFICO, ANO: NOME DOS MESES)
-     - [ ] APERTAR O BOTÃO DE +, ABRIR O PAINEL DE LANÇAMENTO
-     - [ ] RESPOSIVO
+       - [ ] CORES
+       - [ ] TAMANHO
+       - [ ] BOTÃO DELETE
+       - [ ] 3 coluna, resolver a parte dos th!
+     - [ ] BOTÃO DO MENU
+       - [ ] ICON
+       - [ ]GRAFICO, ANO: NOME DOS MESES
+     - [ ] APERTAR O BOTÃO DE + 
+       - [ ] ABRIR O PAINEL DE LANÇAMENTO
+       - [ ] FAZER UM EFEITINHO
+     - [ ] RESPOSIVO - A TRISTEZA
