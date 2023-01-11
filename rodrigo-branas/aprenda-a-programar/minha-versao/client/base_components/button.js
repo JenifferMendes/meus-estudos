@@ -5,6 +5,7 @@ class Button {
         this.element.className = className;
         this.element.innerText = text;
     }
+    
     addListener(fn) {
         this.element.addEventListener("click", fn);
     }

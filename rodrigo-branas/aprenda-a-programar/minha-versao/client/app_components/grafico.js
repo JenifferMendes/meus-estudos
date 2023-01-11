@@ -2,13 +2,13 @@ class Grafico {
     constructor () {
         this.element = document.createElement("div");
         this.element.className = "grafico";
-        this.cores = ["purple","blue","yellow","orange", "red"];
+        this.cores = ["#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8", "#7ABFB8","#7ABFB8", "#7ABFB8", "#7ABFB8"];
     }
     
     adicionarColuna(valor, descricao) {
         const coluna = new Div("grafico-coluna", "grafico-coluna");
         const cor = new Div("grafico-coluna-cor","grafico-coluna-cor");
-        cor.element.style.width = (valor * 100)/5000 + "px";
+        cor.element.style.width = (valor * 100)/700 + "px";
         // const proporcao =   100*(valor - minValue) / (maxValue - minValue);
         // console.log(proporcao);
         // cor.element.style.width = proporcao + "%";

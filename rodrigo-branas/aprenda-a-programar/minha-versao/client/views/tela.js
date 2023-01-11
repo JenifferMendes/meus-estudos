@@ -49,13 +49,20 @@ class Tela {
         
         app.adicionarElementoFilho(header.element);
         const buttonadd = new Button("addButton", "addButton", "+");
+        buttonadd.addListener(()=> {
+            const button = document.querySelector("#addButton");
+            const addInfo = document.querySelector("#form-lancamento");
+            console.log(addInfo);
+            addInfo.classList.toggle("elementInvisible");
+        });
         app.adicionarElementoFilho(buttonadd.element);
+
         const form = this.criarForm();
         app.adicionarElementoFilho(form.element);
         
         const grafico = this.criarGrafico();
         app.adicionarElementoFilho(grafico.element);
-        
+        app.adicionarElementoFilho(document.createElement("hr"));
         for (const mes of this.ano.meses) {
             const nomeDoMes = new h2("titulo-mes", mes.nome);
             app.adicionarElementoFilho(nomeDoMes.element)
@@ -63,12 +70,16 @@ class Tela {
             app.adicionarElementoFilho(tabelaLancamento.element);
             app.adicionarElementoFilho(document.createElement("hr"));
         }
+
+        const inicio = new Button("inicioButton", "inicioButton", "Início");
+        app.adicionarElementoFilho(inicio.element);
         const [body] = document.getElementsByTagName("body");
         body.appendChild(app.element);
     }
 
     criarForm() {
         const form = new Div("form-lancamento","lancamento");
+        form.element.classList.add("elementInvisible");
         this.mesSelect = new Select("mes");
         for (const mes of this.ano.meses) {
             this.mesSelect.adicionarOpcao(mes.nome);
@@ -82,9 +93,16 @@ class Tela {
         this.valorInputNumber = new Input("valor", "number", "valor");
     
         const botaoDeAdicionar = new Button("button-add", "button-add", "Adicionar Lançamento");
-    
+           
         botaoDeAdicionar.addListener(() =>{
             this.adicionarLancamentos();
+        });
+
+        const botaoFechar = new Button("botaoFechar", "botaoFechar", "Fechar");
+        botaoFechar.addListener(() =>{
+            const infoFechar = document.querySelector("#form-lancamento");
+            console.log(infoFechar);
+            infoFechar.classList.toggle("elementInvisible");
         });
 
         form.adicionarElementoFilho(this.mesSelect.element);
@@ -92,6 +110,7 @@ class Tela {
         form.adicionarElementoFilho(this.categoriaInputText.element);
         form.adicionarElementoFilho(this.valorInputNumber.element);
         form.adicionarElementoFilho(botaoDeAdicionar.element);
+        form.adicionarElementoFilho(botaoFechar.element)
         return form;
     }
 
@@ -109,19 +128,19 @@ class Tela {
 
     criarTabelaLancamento(mes) {
         const tabelaLancamento = new Tabela ("tabela-lancamentos");
-            tabelaLancamento.addRow("th", ["CATEGORIA", "VALOR"]);
+            tabelaLancamento.addRowTh("CATEGORIA", "VALOR");
             for (const lancamento of mes.lancamentos) {
-                const button = new Button("button-delete", "button-delete", "delete");
+                const button = new Button("button-delete", "button-delete", "X");
                 button.addListener(()=> {
                     console.log(lancamento)
                     this.deletarLancamentos(mes, lancamento);
                 });
-                tabelaLancamento.addRow("td", [ lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())],[button] );
+                tabelaLancamento.addRowTd("td", [ lancamento.categoria, this.formatarDinheiro(lancamento.getValorString())],[button] );
             }
 
-            tabelaLancamento.addRow("th", ["Juros", this.formatarDinheiro(mes.totalMensal.juros)]);
-            tabelaLancamento.addRow("th", ["Rendimentos", this.formatarDinheiro(mes.totalMensal.rendimentos)]);
-            tabelaLancamento.addRow("th", ["TOTAL MENSAL", this.formatarDinheiro(mes.totalMensal.saldo)]);
+            tabelaLancamento.addRowTh("Juros", this.formatarDinheiro(mes.totalMensal.juros));
+            tabelaLancamento.addRowTh("Rendimentos", this.formatarDinheiro(mes.totalMensal.rendimentos));
+            tabelaLancamento.addRowTh("TOTAL MENSAL", this.formatarDinheiro(mes.totalMensal.saldo));
 
         return tabelaLancamento;
     }

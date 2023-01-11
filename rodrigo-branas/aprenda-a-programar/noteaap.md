@@ -158,21 +158,24 @@ cd .. - volta na pasta
 ## próximos passos
 
 - [ ] CSS  
-  
      - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
        - [ ] CORES
        - [ ] FUNÇÃO
        - [ ] OUTROS
        - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
      - [ ] TABELA
-       - [ ] CORES
-       - [ ] TAMANHO
-       - [ ] BOTÃO DELETE
-       - [ ] 3 coluna, resolver a parte dos th!
-     - [ ] BOTÃO DO MENU
+       - [x] CORES
+       - [x] TAMANHO
+       - [x] BOTÃO DELETE
+       - [x] 3 coluna, resolver a parte dos th!
+     - [ ] BOTÃO DO MENU FAZER FUNCIONAR
+     - [ ] BOTÃO DO INICIO FAZER FUNCIONAR
        - [ ] ICON
-       - [ ]GRAFICO, ANO: NOME DOS MESES
-     - [ ] APERTAR O BOTÃO DE + 
-       - [ ] ABRIR O PAINEL DE LANÇAMENTO
-       - [ ] FAZER UM EFEITINHO
-     - [ ] RESPOSIVO - A TRISTEZA
+       - [ ]GRAFICO, ANO: NOME DOS **MESES**
+     - [x] APERTAR O BOTÃO DE + 
+       - [x] ABRIR O PAINEL DE LANÇAMENTO
+       - [ ] janela para confirmar quando deletar o lancamento.
+       - [ ] separar a função de dar a classe invisivel.
+     - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
+     - [x] procurar uma fonte pra aplicação
+     - [ ] passar os nomes das coisas pra inglês.
