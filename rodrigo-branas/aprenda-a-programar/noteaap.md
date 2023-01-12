@@ -168,6 +168,7 @@ cd .. - volta na pasta
        - [x] TAMANHO
        - [x] BOTÃO DELETE
        - [x] 3 coluna, resolver a parte dos th!
+       - [ ] arrumar as linhas da tabela
      - [ ] BOTÃO DO MENU FAZER FUNCIONAR
      - [ ] BOTÃO DO INICIO FAZER FUNCIONAR
        - [ ] ICON
@@ -179,3 +180,4 @@ cd .. - volta na pasta
      - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
      - [x] procurar uma fonte pra aplicação
      - [ ] passar os nomes das coisas pra inglês.
+  
