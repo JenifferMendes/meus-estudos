@@ -163,21 +163,40 @@ cd .. - volta na pasta
        - [ ] FUNÇÃO
        - [ ] OUTROS
        - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
-     - [ ] TABELA
+     - [x] TABELA
        - [x] CORES
        - [x] TAMANHO
        - [x] BOTÃO DELETE
        - [x] 3 coluna, resolver a parte dos th!
-       - [ ] arrumar as linhas da tabela
-     - [ ] BOTÃO DO MENU FAZER FUNCIONAR
-     - [ ] BOTÃO DO INICIO FAZER FUNCIONAR
-       - [ ] ICON
-       - [ ]GRAFICO, ANO: NOME DOS **MESES**
+       - [x] arrumar as linhas da tabela
+     - [x] BOTÃO DO MENU FAZER FUNCIONAR
+     - [x] BOTÃO DO INICIO FAZER FUNCIONAR
+       - [x] ICON
+       - [x]GRAFICO, ANO: NOME DOS MESES
      - [x] APERTAR O BOTÃO DE + 
        - [x] ABRIR O PAINEL DE LANÇAMENTO
        - [ ] janela para confirmar quando deletar o lancamento.
        - [ ] separar a função de dar a classe invisivel.
-     - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
      - [x] procurar uma fonte pra aplicação
+     - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
      - [ ] passar os nomes das coisas pra inglês.
   
+### 12/01
+
+- [x] TABELA
+       - [x] arrumar as linhas da tabela
+- [x] BOTÃO DO MENU FAZER FUNCIONAR ?? (só falta a função)
+      - [x]GRAFICO, ANO: NOME DOS MESES
+- [x] BOTÃO DO INICIO FAZER FUNCIONAR
+
+css:
+clamp(25px, 40px, 5vw)
+
+### 13/01
+- [ ] janela para confirmar quando deletar o lancamento.
+- [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
+       - [ ] CORES
+       - [ ] FUNÇÃO
+       - [ ] OUTROS
+       - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
+- [ ] separar a função de dar a classe invisivel.

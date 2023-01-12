@@ -40,17 +40,30 @@ class Tela {
         document.getElementById("app").remove();
         const app = new Div("app", "app");
         const header = new Div("header", "header");
+
+        const buttonMenu = new Button("buttonMenu", "buttonMenu", "Menu");
+        buttonMenu.addListener(()=> {
+            const menuInfo = document.querySelector("#menuDiv");
+            menuInfo.classList.toggle("elementInvisible");
+        });
+        header.adicionarElementoFilho(buttonMenu.element);
         
         const titulo = new h2("titulo","Finanças Pessoais");
         header.adicionarElementoFilho(titulo.element);
-        
-        const navbar = new Div("navbar", "navbar");
-        header.adicionarElementoFilho(navbar.element);
-        
+                       
         app.adicionarElementoFilho(header.element);
+
+        const menuDiv = new Div("menuDiv", "menuDiv");
+        menuDiv.element.classList.add("elementInvisible");
+        for (const mes of this.ano.meses) {
+            const menuLinkMes = new Link("menuLink", "menuLink", mes.nome, `${mes.nome}`);
+            menuDiv.adicionarElementoFilho(menuLinkMes.element);
+        }
+        
+        app.adicionarElementoFilho(menuDiv.element);
+
         const buttonadd = new Button("addButton", "addButton", "+");
         buttonadd.addListener(()=> {
-            const button = document.querySelector("#addButton");
             const addInfo = document.querySelector("#form-lancamento");
             console.log(addInfo);
             addInfo.classList.toggle("elementInvisible");
@@ -63,15 +76,23 @@ class Tela {
         const grafico = this.criarGrafico();
         app.adicionarElementoFilho(grafico.element);
         app.adicionarElementoFilho(document.createElement("hr"));
-        for (const mes of this.ano.meses) {
-            const nomeDoMes = new h2("titulo-mes", mes.nome);
-            app.adicionarElementoFilho(nomeDoMes.element)
-            const tabelaLancamento = this.criarTabelaLancamento(mes);
-            app.adicionarElementoFilho(tabelaLancamento.element);
-            app.adicionarElementoFilho(document.createElement("hr"));
-        }
 
+        
+        for (const mes of this.ano.meses) {
+            const divTable = new Div(mes.nome, "divTable");
+            const nomeDoMes = new h2("titulo-mes", mes.nome);
+            divTable.adicionarElementoFilho(nomeDoMes.element);
+
+            const tabelaLancamento = this.criarTabelaLancamento(mes);
+            divTable.adicionarElementoFilho(tabelaLancamento.element);
+            divTable.adicionarElementoFilho(document.createElement("hr"));
+            app.adicionarElementoFilho(divTable.element);
+        }
+        
         const inicio = new Button("inicioButton", "inicioButton", "Início");
+        inicio.addListener(() => {
+           window.scrollTo(0,0);
+        });
         app.adicionarElementoFilho(inicio.element);
         const [body] = document.getElementsByTagName("body");
         body.appendChild(app.element);
