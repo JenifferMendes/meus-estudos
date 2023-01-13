@@ -175,7 +175,7 @@ cd .. - volta na pasta
        - [x]GRAFICO, ANO: NOME DOS MESES
      - [x] APERTAR O BOTÃO DE + 
        - [x] ABRIR O PAINEL DE LANÇAMENTO
-       - [ ] janela para confirmar quando deletar o lancamento.
+       - [x] janela para confirmar quando deletar o lancamento.
        - [ ] separar a função de dar a classe invisivel.
      - [x] procurar uma fonte pra aplicação
      - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
@@ -193,10 +193,16 @@ css:
 clamp(25px, 40px, 5vw)
 
 ### 13/01
-- [ ] janela para confirmar quando deletar o lancamento.
+- [x] janela para confirmar quando deletar o lancamento.
+
+### 14/01
 - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
        - [ ] CORES
        - [ ] FUNÇÃO
        - [ ] OUTROS
        - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
+ - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
+
+### 15/01
 - [ ] separar a função de dar a classe invisivel.
+  - [ ] passar os nomes das coisas pra inglês.

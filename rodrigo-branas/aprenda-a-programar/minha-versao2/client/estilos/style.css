@@ -1,0 +1,322 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color-darkpurple: #241126;
+    --color-table-odd: #AF7EBD;
+    --color-table-even: #864EA6;
+    --color-purple: #6B4D73;
+    --color-cyan: #7ABFB8;
+    --color-yellow: #f2c97edc;
+    --color-black: #0D0D0D;
+    --color-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-darkpurple);
+    color: white;
+    font-family: "Lato", sans-serif;  
+}
+/* ----------------------Header----------------- */
+.header {
+    width: 100vw;
+    height: 50px;
+    background: var(--color-cyan);
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 11px 7px -1px rgba(0,0,0,0.68);
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+}
+
+.titulo {
+    font-size: 30px;
+    color: var(--color-black);
+    padding: 10px 0 0 10px;
+}
+
+.menuDiv {
+    position: fixed;
+    top: 50px;
+    width: 90%;
+    max-width: 200px;
+    height: 450px;
+    background-color: var(--color-cyan);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    z-index: 9;
+}
+
+.menuLink {
+    width: 100%;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 3px;
+    background-color: var(--color-cyan);
+}
+
+.menuLink:hover {
+    background-color: var(--color-white);
+}
+
+.titulo-mes {
+    text-align: center;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--color-yellow)
+}
+
+.elementInvisible {
+    display: none;
+}
+/* ----------------------Form------------------- */
+.lancamento {
+    position: fixed;
+    right: 10vw;
+    bottom: 10vh;
+    width: 90%;
+    max-width: 300px;
+    height: 390px;
+    background-color: #48375f;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+}
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #48375f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-indent: 5px;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: 700; 
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: 700; 
+}
+
+option {
+    background-color: var(--color-purple);
+    
+}
+
+.buttonMenu {
+    width: 100px;
+    height: 100%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: 30px;
+    z-index: 100;
+    border: transparent;
+    padding-top: 10px;
+}
+
+.addButton {
+    position: fixed;
+    bottom: 10vh;
+    right: 10vw;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    font-size: 4rem;
+}
+
+.button-add {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.botaoFechar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.button-delete {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.inicioButton {
+    width: 6em;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 2vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+/* ----------------------Grafico----------------- */
+.grafico {
+    width: min(1200px,100%);
+    height: 100%;
+    max-height: 500px;
+    border: 1px solid #48375f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-aroundflex;
+    align-items: flex-start;
+    margin: 100px auto 50px auto;    
+}
+
+.grafico-coluna {
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    z-index: -100;
+}
+.grafico-coluna-cor{
+    height: 20px;
+    max-width: 700px;
+    position: relative;
+    border-color: white;
+    border-radius: 100px;
+}
+.grafico-nomedomes {
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    color: var(--color-black);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+/* ----------------------Table------------------- */
+.divTable {
+    padding-top: 50px;
+}
+
+.tabela-lancamentos {
+    width: min(1200px,100%);
+    margin: auto;
+    background-color: var(--color-table-odd);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 2px 0px 15px 5px rgba(175,126,189,0.78);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.tabela-lancamentos tr:nth-child(even){
+    background-color: var(--color-table-even);
+}
+
+th {
+    color: var(--color-black);   
+    background-color: var(--color-yellow);
+    padding: 10px;
+    font-weight: 900;
+}
+
+td, th {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    text-align: left;
+}
+
+tr td:not(:nth-child(3)) {
+    padding-left: 10px;
+}
+
+tr td:nth-child(2) {
+    text-align: center;
+    width: 150px;
+}
+
+tr td:nth-child(3) {
+    width: 50px;
+    height: 50px;
+}
+/*-------------------------warning-----------------------*/
+.warningDiv {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: 280px;
+    height: 120px;
+    background-color: var(--color-darkpurple);
+    border: 3px solid var(--color-yellow);
+    box-shadow: 2px 0px 15px 5px rgba(175,126,189,0.78);
+    border-radius: 10px;
+    z-index: 2;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.warningText {
+    text-align: center;
+    color: var(--color-yellow);
+    padding: 15px 0 10px 0;
+    font-size: 22px;
+}
+
+.divButton {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCancel, .buttonDelete {
+    width: 6em;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* bottom: 2vh;
+    left: 50vw; */
+    /* transform: translateX(-50%); */
+    z-index: 100;
+    margin: 10px;
+}
