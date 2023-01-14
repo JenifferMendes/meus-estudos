@@ -95,8 +95,13 @@ class Tela {
     const form = this.criarForm();
     app.adicionarElementoFilho(form.element);
 
+    const graficoDiv = new Div("graficoDiv", "graficoDiv");
+    const graficoNome = new h2("grafico-name", "Gráfico Anual");
     const grafico = this.criarGrafico();
-    app.adicionarElementoFilho(grafico.element);
+    
+    graficoDiv.adicionarElementoFilho(graficoNome.element);
+    graficoDiv.adicionarElementoFilho(grafico.element);
+    app.adicionarElementoFilho(graficoDiv.element);
     app.adicionarElementoFilho(document.createElement("hr"));
 
 
@@ -194,12 +199,11 @@ class Tela {
 
   criarGrafico() {
     const grafico = new Grafico();
-    // const maxValue = Math.max(...this.ano.meses.map(mes => mes.totalMensal.saldo));
-    // console.log(maxValue);
-    // const minValue = Math.min(...this.ano.meses.map(mes => mes.totalMensal.saldo));
-    // console.log(minValue);
+
+    const maxValue = Math.max(...this.ano.meses.map(mes => mes.totalMensal.saldo));
+    const minValue = Math.min(...this.ano.meses.map(mes => mes.totalMensal.saldo));
     for (const mes of this.ano.meses) {
-      grafico.adicionarColuna(mes.totalMensal.saldo, mes.nome);
+      grafico.adicionarColuna(mes.totalMensal.saldo, mes.nome, minValue, maxValue);
     }
     return grafico;
   }

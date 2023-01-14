@@ -113,6 +113,8 @@ delete -> apaga registro.
 
 voltar na aula no tempo: 35:15 e tentar acessar o banco de dados via terminal // pesquisar e entender como funciona pro postgresql
 
+// const [numminValue, nummaxValue] = [Number(minValue), Number(maxValue)];
+
 # aula 11 - Definindo camadas e responsabilidades no backend.
 
 responsabilidades:
@@ -158,11 +160,11 @@ cd .. - volta na pasta
 ## próximos passos
 
 - [ ] CSS  
-     - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
+     - [] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
        - [ ] CORES
-       - [ ] FUNÇÃO
-       - [ ] OUTROS
-       - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
+       - [x] FUNÇÃO
+       - [x] OUTROS
+       - [x] TORNAR os nomes do mes em 3 letras (JAN, FEV)
      - [x] TABELA
        - [x] CORES
        - [x] TAMANHO
@@ -178,7 +180,7 @@ cd .. - volta na pasta
        - [x] janela para confirmar quando deletar o lancamento.
        - [ ] separar a função de dar a classe invisivel.
      - [x] procurar uma fonte pra aplicação
-     - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
+     - [x] RESPOSIVO - A TRISTEZA
      - [ ] passar os nomes das coisas pra inglês.
   
 ### 12/01
@@ -197,12 +199,14 @@ clamp(25px, 40px, 5vw)
 
 ### 14/01
 - [ ] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
-       - [ ] CORES
-       - [ ] FUNÇÃO
-       - [ ] OUTROS
-       - [ ] TORNAR os nomes do mes em 3 letras (JAN, FEV)
- - [ ] RESPOSIVO - A TRISTEZA (só falta o grafico)
+       - [x] FUNÇÃO
+       - [x] OUTROS
+       - [x] TORNAR os nomes do mes em 3 letras (JAN, FEV)
+ - [x] RESPOSIVO - A TRISTEZA (só falta o grafico)
 
 ### 15/01
 - [ ] separar a função de dar a classe invisivel.
-  - [ ] passar os nomes das coisas pra inglês.
+- [ ] cores do grafico.
+- [ ] arrumar o menu para fechar quando clicar no mes.
+- [ ] icon menu e inicio (ver o que fazer)
+- [ ] passar os nomes das coisas pra inglês.
