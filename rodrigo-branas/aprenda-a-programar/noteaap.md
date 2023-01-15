@@ -206,6 +206,7 @@ clamp(25px, 40px, 5vw)
 
 ### 15/01
 - [ ] separar a função de dar a classe invisivel.
+- [ ] separar as CSS
 - [ ] cores do grafico.
 - [ ] arrumar o menu para fechar quando clicar no mes.
 - [ ] icon menu e inicio (ver o que fazer)
