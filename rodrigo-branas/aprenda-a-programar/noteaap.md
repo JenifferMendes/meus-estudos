@@ -160,8 +160,8 @@ cd .. - volta na pasta
 ## próximos passos
 
 - [ ] CSS  
-     - [] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
-       - [ ] CORES
+     - [x] GRAFICO (GRAFICO POSITIVO/NEGATIVO)
+       - [x] CORES
        - [x] FUNÇÃO
        - [x] OUTROS
        - [x] TORNAR os nomes do mes em 3 letras (JAN, FEV)
@@ -178,7 +178,7 @@ cd .. - volta na pasta
      - [x] APERTAR O BOTÃO DE + 
        - [x] ABRIR O PAINEL DE LANÇAMENTO
        - [x] janela para confirmar quando deletar o lancamento.
-       - [ ] separar a função de dar a classe invisivel.
+       - [x] separar a função de dar a classe invisivel.
      - [x] procurar uma fonte pra aplicação
      - [x] RESPOSIVO - A TRISTEZA
      - [ ] passar os nomes das coisas pra inglês.
@@ -210,5 +210,9 @@ clamp(25px, 40px, 5vw)
 - [x] cores do grafico.
 - [X] arrumar o menu para fechar quando clicar no mes.
 - [x] separar a função de dar a classe invisivel.
-- [ ] icon menu e inicio (ver o que fazer)
+- [x] icon menu e inicio (ver o que fazer)
+
+
+### 16/01
+- [ ] animações do menu de descer devagar. aumentar o form do lançamento.
 - [ ] passar os nomes das coisas pra inglês.

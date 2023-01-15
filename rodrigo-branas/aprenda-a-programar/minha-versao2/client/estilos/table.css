@@ -58,8 +58,7 @@ tr td:nth-child(3) {
     height: 100%;
     background-color: var(--color-cyan);
     color: var(--color-black);
-    padding: 8px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 900;
 }

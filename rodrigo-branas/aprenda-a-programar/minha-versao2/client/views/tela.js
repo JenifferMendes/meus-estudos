@@ -216,7 +216,7 @@ class Tela {
     tabelaLancamento.addRowTh("CATEGORIA", "VALOR");
         
     for (const lancamento of mes.lancamentos) {
-      const button = new Button("button-delete", "button-delete", "X");
+      const button = new Button("button-delete", "button-delete material-symbols-outlined", "delete");
       button.addListener(() => {
         this.elementInvisible("warningDiv");
         

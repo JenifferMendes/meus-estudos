@@ -30,16 +30,16 @@
 
 .buttonMenu {
     width: 58px;
-    height: 100%;
-    background-color: var(--color-purple);
-    border-radius: inherit;
-    color: var(--color-yellow);
-    font-size: 60px;
+    height: 80%;
+    background-color: var(--color-darkpurple);
+    border-radius: 10px;
+    color: var(--color-cyan);
+    font-size: 45px;
     line-height: 0;
     z-index: 100;
     border: transparent;
-    padding-top: 2px;
-
+    padding: 5px;
+    margin: 5px 0 0 5px;
 }
 
 .menuLink {
