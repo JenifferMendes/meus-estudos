@@ -7,4 +7,8 @@ class Link {
         this.element.innerText = text;
         this.element.href = `#${href}`;
      }
+
+     addListener(fn) {
+        this.element.addEventListener("click", fn);
+    }
 }

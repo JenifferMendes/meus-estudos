@@ -205,9 +205,10 @@ clamp(25px, 40px, 5vw)
  - [x] RESPOSIVO - A TRISTEZA (só falta o grafico)
 
 ### 15/01
-- [ ] separar a função de dar a classe invisivel.
-- [ ] separar as CSS
-- [ ] cores do grafico.
-- [ ] arrumar o menu para fechar quando clicar no mes.
+- [x] separar as CSS
+- [x] arrumar linha hr
+- [x] cores do grafico.
+- [X] arrumar o menu para fechar quando clicar no mes.
+- [x] separar a função de dar a classe invisivel.
 - [ ] icon menu e inicio (ver o que fazer)
 - [ ] passar os nomes das coisas pra inglês.

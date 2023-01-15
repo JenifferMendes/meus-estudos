@@ -3,7 +3,9 @@ class Button {
         this.element = document.createElement("button");
         this.element.id = id;
         this.element.className = className;
-        this.element.innerText = text;
+        if (text) {
+            this.element.innerText = text;
+        }
     }
     
     addListener(fn) {

@@ -1,0 +1,50 @@
+/* ----------------------Grafico----------------- */
+.graficoDiv {
+    height: calc(100vh - 65px);
+    padding: 0 10px;
+    z-index: -100;
+}
+
+.grafico-name {
+    color: var(--color-yellow);
+    text-align: center;
+    padding: 80px 0 60px 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.grafico {
+    width: min(800px,100%);
+    height: fit-content;
+    max-height: 500px;
+    border: 1px solid var(--color-darkpurple);
+    box-shadow: 2px 0px 15px 5px rgba(175,126,189,0.78);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--color-darkpurple);
+    margin: auto;
+    z-index: -100;
+}
+
+.grafico-coluna {
+    display: flex;
+    position: relative;
+    max-width: 700px;
+    flex-direction: column;
+
+}
+.grafico-coluna-cor{
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 100px;
+    margin: 2px 0px;
+    position: relative;
+    display: flex;
+
+}
+.grafico-nomedomes {
+    position: absolute;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
