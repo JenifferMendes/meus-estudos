@@ -1,6 +1,7 @@
-class Tabela {
-    constructor (className) {
+class Table {
+    constructor (id, className) {
         this.element = document.createElement("table");
+        this.element.id = id;
         this.element.className = className;
         this.th = null;
         this.thcol = null;
@@ -10,16 +11,16 @@ class Tabela {
         this.th = document.createElement("th");
         this.th.innerText = text;
     }
-    addTdRow (textcol){
+    addTdRow (textCol){
         this.thcol = document.createElement("th");
-        this.thcol.innerText = textcol;
+        this.thcol.innerText = textCol;
         this.thcol.setAttribute("colspan", 2);
     }
-    addRowTh(text, textcol) {
+    addRowTh(text, textCol) {
         const tr = document.createElement("tr");
         this.addTd(text);
         tr.appendChild(this.th);
-        this.addTdRow(textcol);
+        this.addTdRow(textCol);
         tr.appendChild(this.thcol);
         this.element.appendChild(tr);
     }
@@ -38,7 +39,6 @@ class Tabela {
                 tr.appendChild(td);
             }
          }
-
-        this.element.appendChild(tr);
+         this.element.appendChild(tr);
     }
 }

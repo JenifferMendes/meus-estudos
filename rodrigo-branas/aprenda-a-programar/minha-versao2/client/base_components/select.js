@@ -5,11 +5,11 @@ class Select {
         this.element.className = className;
     }
 
-    adicionarOpcao(text, className){
-        const opcao = document.createElement("option");
-        opcao.text = text;
-        opcao.className = className;
-        this.element.appendChild(opcao);
+    addOption(text, className){
+        const option = document.createElement("option");
+        option.text = text;
+        option.className = className;
+        this.element.appendChild(option);
     }
     getValue() {
        return this.element.value;

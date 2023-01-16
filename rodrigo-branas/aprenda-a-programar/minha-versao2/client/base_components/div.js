@@ -4,7 +4,8 @@ class Div {
         this.element.id = id;
         this.element.className = className;
     }
-    adicionarElementoFilho(filho) {
-        this.element.appendChild(filho);
+
+    appendChild(child) {
+        this.element.appendChild(child);
     }
 }

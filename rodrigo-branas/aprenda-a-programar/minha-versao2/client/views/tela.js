@@ -19,10 +19,10 @@ class Tela {
       );
     }
     this.ano.calcularSaldo();
-    this.renderizar();
+    this.render();
   }
 
-  formatarDinheiro(valor) {
+  moneyFormat(valor) {
     return new Intl.NumberFormat("pt-br", {
       currency: "BRL",
       style: "currency",
@@ -49,17 +49,17 @@ class Tela {
     };
     this.lancamentoService.saveLancamento(lancamento);
     this.ano.calcularSaldo();
-    this.renderizar();
+    this.render();
   }
 
   deletarLancamentos(mes, lancamento) {
     this.lancamentoService.deleteLancamento(lancamento.idLancamento);
     this.ano.deletarLancamento(mes, lancamento);
     this.ano.calcularSaldo();
-    this.renderizar();
+    this.render();
   }
 
-  renderizar() {
+  render() {
     document.getElementById("app").remove();
     const app = new Div("app", "app");
     const header = new Div("header", "header");
@@ -68,47 +68,47 @@ class Tela {
     menuButton.addListener(() => {
       this.toggleClassName("menuDiv", "transition");
     });
-    header.adicionarElementoFilho(menuButton.element);
+    header.appendChild(menuButton.element);
 
     const title = new h2("title", "Finanças Pessoais");
-    header.adicionarElementoFilho(title.element);
+    header.appendChild(title.element);
 
     const menuDiv = this.createMenu();
-    app.adicionarElementoFilho(menuDiv.element);
-    app.adicionarElementoFilho(header.element);
+    app.appendChild(menuDiv.element);
+    app.appendChild(header.element);
 
     const plusButton = new Button("plusButton", "plusButton material-symbols-outlined", "forms_add_on");
     plusButton.addListener(() => {
       this.toggleClassName("formEntries", "transition");
     });
-    app.adicionarElementoFilho(plusButton.element);
+    app.appendChild(plusButton.element);
 
-    const form = this.criarForm();
-    app.adicionarElementoFilho(form.element);
+    const form = this.createForm();
+    app.appendChild(form.element);
     
     const warningDiv = this.createWarning();
-    app.adicionarElementoFilho(warningDiv.element);
+    app.appendChild(warningDiv.element);
     
-    const grafico = this.criarGrafico();
-    app.adicionarElementoFilho(grafico.element);
-    app.adicionarElementoFilho(document.createElement("hr"));
+    const chart = this.createChart();
+    app.appendChild(chart.element);
+    app.appendChild(document.createElement("hr"));
     
     for (const mes of this.ano.meses) {
-      const divTable = new Div(mes.nome, "divTable");
-      const nomeDoMes = new h2("titulo-mes", mes.nome);
-      divTable.adicionarElementoFilho(nomeDoMes.element);
+      const tableDiv = new Div(mes.nome, "tableDiv");
+      const monthNameTitle = new h2("monthNameTitle", mes.nome);
+      tableDiv.appendChild(monthNameTitle.element);
 
-      const tabelaLancamento = this.criarTabelaLancamento(mes);
-      divTable.adicionarElementoFilho(tabelaLancamento.element);
-      divTable.adicionarElementoFilho(document.createElement("hr"));
-      app.adicionarElementoFilho(divTable.element);
+      const entryTable = this.createEntryTable(mes);
+      tableDiv.appendChild(entryTable.element);
+      tableDiv.appendChild(document.createElement("hr"));
+      app.appendChild(tableDiv.element);
     }
 
     const begin = new Button("beginButton", "beginButton material-symbols-outlined", "keyboard_arrow_up");
     begin.addListener(() => {
       window.scrollTo(0, 0);
     });
-    app.adicionarElementoFilho(begin.element);
+    app.appendChild(begin.element);
     const [body] = document.getElementsByTagName("body");
     body.appendChild(app.element);
   }
@@ -122,7 +122,7 @@ class Tela {
         mes.nome,
         `${mes.nome}`
         );
-        menuDiv.adicionarElementoFilho(menuLinkMes.element);
+        menuDiv.appendChild(menuLinkMes.element);
         menuLinkMes.addListener(() => {
           this.toggleClassName("menuDiv", "transition");
         });
@@ -130,17 +130,16 @@ class Tela {
       return menuDiv;
   }
 
-  criarForm() {
+  createForm() {
     const form = new Div("formEntries", "formEntries");
-    // form.element.classList.add("invisibleElement");
     this.mesSelect = new Select("mes", "inputSelectForm");
     for (const mes of this.ano.meses) {
-      this.mesSelect.adicionarOpcao(mes.nome, "optionForm");
+      this.mesSelect.addOption(mes.nome, "optionForm");
     }
 
     this.tipoSelect = new Select("tipo", "inputSelectForm");
-    this.tipoSelect.adicionarOpcao("receita","optionForm");
-    this.tipoSelect.adicionarOpcao("despesa","optionForm");
+    this.tipoSelect.addOption("receita","optionForm");
+    this.tipoSelect.addOption("despesa","optionForm");
 
     this.categoriaInputText = new Input("categoria", "text", "categoria", "inputSelectForm");
     this.valorInputNumber = new Input("valor", "number", "valor", "inputSelectForm");
@@ -160,92 +159,94 @@ class Tela {
       this.toggleClassName("formEntries", "transition" );
     });
 
-    form.adicionarElementoFilho(this.mesSelect.element);
-    form.adicionarElementoFilho(this.tipoSelect.element);
-    form.adicionarElementoFilho(this.categoriaInputText.element);
-    form.adicionarElementoFilho(this.valorInputNumber.element);
-    form.adicionarElementoFilho(addEntryButton.element);
-    form.adicionarElementoFilho(closeButton.element);
+    form.appendChild(this.mesSelect.element);
+    form.appendChild(this.tipoSelect.element);
+    form.appendChild(this.categoriaInputText.element);
+    form.appendChild(this.valorInputNumber.element);
+    form.appendChild(addEntryButton.element);
+    form.appendChild(closeButton.element);
     return form;
   }
 
-  criarGrafico() {
-    const graficoDiv = new Div("graficoDiv", "graficoDiv");
-    const graficoNome = new h2("grafico-name", "Gráfico Anual");
-    const grafico = new Grafico();
+  createChart() {
+    const chartDiv = new Div("chartDiv", "chartDiv");
+    const chartNome = new h2("titleChart", "Gráfico Anual");
+    const chart = new Chart();
 
     const maxValue = Math.max(...this.ano.meses.map(mes => mes.totalMensal.saldo));
+    console.log(maxValue);
     const minValue = Math.min(...this.ano.meses.map(mes => mes.totalMensal.saldo));
+    console.log(minValue);
     for (const mes of this.ano.meses) {
-      grafico.adicionarColuna(mes.totalMensal.saldo, mes.nome, minValue, maxValue);
+      chart.addBar(mes.totalMensal.saldo, mes.nome, minValue, maxValue);
     }
-    graficoDiv.adicionarElementoFilho(graficoNome.element);
-    graficoDiv.adicionarElementoFilho(grafico.element);
-    return graficoDiv;
+    chartDiv.appendChild(chartNome.element);
+    chartDiv.appendChild(chart.element);
+    return chartDiv;
   }
 
   createWarning() {
     const warningDiv = new Div("warningDiv", "warningDiv");
     warningDiv.element.classList.add("invisibleElement");
     const warningText = new h2("warningText", "Você tem certeza disso?");
-    const warningDivButton = new Div("divButton", "divButton");
-    const warningButtonCancel = new Button(
-      "buttonCancel",
-      "buttonCancel",
+    const warningButtonDiv = new Div("buttonDiv", "buttonDiv");
+    const warningCancelButton = new Button(
+      "cancelButton",
+      "cancelButton",
       "Cancelar"
     );
-    warningButtonCancel.addListener(() => {
+    warningCancelButton.addListener(() => {
       this.toggleClassName("warningDiv", "invisibleElement");
     });
-    const warningButtonDelete = new Button(
-      "buttonDelete",
-      "buttonDelete",
+    const warningDeleteButton = new Button(
+      "deleteButton",
+      "deleteButton",
       "Deletar"
     );
    
-    warningDivButton.adicionarElementoFilho(warningButtonCancel.element);
-    warningDivButton.adicionarElementoFilho(warningButtonDelete.element);
-    warningDiv.adicionarElementoFilho(warningText.element);
-    warningDiv.adicionarElementoFilho(warningDivButton.element);
+    warningButtonDiv.appendChild(warningCancelButton.element);
+    warningButtonDiv.appendChild(warningDeleteButton.element);
+    warningDiv.appendChild(warningText.element);
+    warningDiv.appendChild(warningButtonDiv.element);
     return warningDiv;
   }
 
-  criarTabelaLancamento(mes) {
-    const tabelaLancamento = new Tabela("tabela-lancamentos");
-    tabelaLancamento.addRowTh("CATEGORIA", "VALOR");
+  createEntryTable(mes) {
+    const entryTable = new Table("entriesTable","entriesTable");
+    entryTable.addRowTh("CATEGORIA", "VALOR");
         
     for (const lancamento of mes.lancamentos) {
-      const button = new Button("button-delete", "button-delete material-symbols-outlined", "delete");
-      button.addListener(() => {
+      const deleteButtonTable = new Button("deleteButtonTable", "deleteButtonTable material-symbols-outlined", "delete");
+      deleteButtonTable.addListener(() => {
         this.toggleClassName("warningDiv", "invisibleElement");
         
-        const warningDelete = document.querySelector("#buttonDelete");
+        const warningDelete = document.querySelector("#deleteButton");
         warningDelete.addEventListener("click", () => this.deletarLancamentos(mes, lancamento));
       });
         
-      tabelaLancamento.addRowTd(
+      entryTable.addRowTd(
         "td",
         [
           lancamento.categoria,
-          this.formatarDinheiro(lancamento.getValorString()),
+          this.moneyFormat(lancamento.getValorString()),
         ],
-        [button]
+        [deleteButtonTable]
       );
     }
 
-    tabelaLancamento.addRowTh(
+    entryTable.addRowTh(
       "Juros",
-      this.formatarDinheiro(mes.totalMensal.juros)
+      this.moneyFormat(mes.totalMensal.juros)
     );
-    tabelaLancamento.addRowTh(
+    entryTable.addRowTh(
       "Rendimentos",
-      this.formatarDinheiro(mes.totalMensal.rendimentos)
+      this.moneyFormat(mes.totalMensal.rendimentos)
     );
-    tabelaLancamento.addRowTh(
+    entryTable.addRowTh(
       "TOTAL MENSAL",
-      this.formatarDinheiro(mes.totalMensal.saldo)
+      this.moneyFormat(mes.totalMensal.saldo)
     );
 
-    return tabelaLancamento;
+    return entryTable;
   }
 }

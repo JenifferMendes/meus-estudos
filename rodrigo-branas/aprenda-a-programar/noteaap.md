@@ -216,22 +216,29 @@ clamp(25px, 40px, 5vw)
 ### 16/01
 - [x] animações do menu de descer devagar. aumentar o form do lançamento.
 - [ ] passar os nomes das coisas pra inglês.
-  - [ ] styles (paramos em chart, table e warning)
+  - [ ] arrumado:
+      * app
+      * base
+      * styles
+  - [ ] falta arrumar:
+    - [ ] domain, infra, services, main, backend
 - [ ] arrumar o erro do form;
+- [x] olhar o grafico com amor e carinho.
 
-
+---
 Nomes:
-pt/en
-Mes = month
-ano = year
-lancamento/lancamentos = entry / entries (lancametion);
-grafico = chart
-tabela = table
-valor = value?
-formulario = form
-estilo = styles
-tela = screen???
-inicio = home? start? begin 
+pt/en  
+Mes = month  
+ano = year  
+lancamento/lancamentos = entry / entries (lancametion);  
+grafico = chart  
+tabela = table  
+valor = value?  
+formulario = form  
+estilo = styles  
+tela = screen???  
+inicio = home? start? begin  
+as
 
 
 

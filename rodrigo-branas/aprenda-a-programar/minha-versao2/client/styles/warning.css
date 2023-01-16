@@ -19,13 +19,13 @@
     font-size: 22px;
 }
 
-.divButton {
+.buttonDiv {
     padding: 0 10px 10px 10px;
     display: flex;
     justify-content: center;
 }
 
-.buttonCancel, .buttonDelete {
+.cancelButton, .deleteButton {
     width: 6em;
     background-color: var(--color-cyan);
     color: var(--color-black);
