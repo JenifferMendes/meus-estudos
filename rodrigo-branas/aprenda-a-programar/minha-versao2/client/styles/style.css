@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-darkpurple);
     color: white;
@@ -30,11 +34,11 @@ hr {
     border-color: var(--color-table-odd);
 }
 
-.elementInvisible {
+.invisibleElement {
     display: none;
 }
 
-.inicioButton {
+.beginButton {
     width: 2.5em;
     background-color: var(--color-cyan);
     color: var(--color-black);
@@ -50,7 +54,7 @@ hr {
     box-shadow: 1px 2px 0px 0px #182524;
 }
 
-.addButton {
+.plusButton {
     position: fixed;
     bottom: 11vh;
     right: 11vw;
@@ -63,4 +67,5 @@ hr {
     border: 2px solid var(--color-darkpurple);
     box-shadow: 2px 3px 0px 0px #182524;
 }
+
 

@@ -10,7 +10,7 @@
     z-index: 100;
 }
 
-.titulo {
+.title {
     font-size: 30px;
     color: var(--color-black);
     padding: 10px 0 0 10px;
@@ -21,14 +21,18 @@
     top: 50px;
     width: 90%;
     max-width: 200px;
-    height: 450px;
+    height: 0px;
     background-color: var(--color-cyan);
-    padding: 10px;
+    box-shadow: 2px 11px 7px -1px rgba(0,0,0,0.68);
     border-radius: 0 0 10px 10px;
     z-index: 99;
+    max-height: 450px;
+    transition: height 500ms ease-in-out;
+    overflow: hidden;
 }
 
-.buttonMenu {
+
+.menuButton {
     width: 58px;
     height: 80%;
     background-color: var(--color-darkpurple);
@@ -48,10 +52,18 @@
     font-size: 25px;
     text-decoration: none;
     color: var(--color-black);
-    padding: 3px;
+    padding: 3px 0 5px 15px;
     background-color: var(--color-cyan);
 }
 
-.menuLink:hover {
-    background-color: var(--color-white);
+.menuLink:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+.menuLink:hover {
+    background-color: var(--color-darkpurple);
+    color: var(--color-cyan);
+    
+}
+

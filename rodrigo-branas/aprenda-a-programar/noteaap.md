@@ -214,5 +214,24 @@ clamp(25px, 40px, 5vw)
 
 
 ### 16/01
-- [ ] animações do menu de descer devagar. aumentar o form do lançamento.
+- [x] animações do menu de descer devagar. aumentar o form do lançamento.
 - [ ] passar os nomes das coisas pra inglês.
+  - [ ] styles (paramos em chart, table e warning)
+- [ ] arrumar o erro do form;
+
+
+Nomes:
+pt/en
+Mes = month
+ano = year
+lancamento/lancamentos = entry / entries (lancametion);
+grafico = chart
+tabela = table
+valor = value?
+formulario = form
+estilo = styles
+tela = screen???
+inicio = home? start? begin 
+
+
+

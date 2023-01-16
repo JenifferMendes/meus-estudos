@@ -1,12 +1,14 @@
 class Select {
-    constructor(id){
+    constructor(id, className){
         this.element = document.createElement("select");
         this.element.id = id;
+        this.element.className = className;
     }
 
-    adicionarOpcao(text){
+    adicionarOpcao(text, className){
         const opcao = document.createElement("option");
         opcao.text = text;
+        opcao.className = className;
         this.element.appendChild(opcao);
     }
     getValue() {

@@ -29,9 +29,9 @@ class Tela {
     }).format(valor);
   }
 
-  elementInvisible(id) {
-    const elementInvisible = document.querySelector(`#${id}`);
-    elementInvisible.classList.toggle("elementInvisible");
+  toggleClassName(id, toggleClassName) {
+    const toggleClass = document.querySelector(`#${id}`);
+    toggleClass.classList.toggle(toggleClassName);
   }
 
   adicionarLancamentos() {
@@ -64,24 +64,24 @@ class Tela {
     const app = new Div("app", "app");
     const header = new Div("header", "header");
 
-    const buttonMenu = new Button("buttonMenu", "buttonMenu material-symbols-outlined", "list");
-    buttonMenu.addListener(() => {
-      this.elementInvisible("menuDiv");
+    const menuButton = new Button("menuButton", "menuButton material-symbols-outlined", "list");
+    menuButton.addListener(() => {
+      this.toggleClassName("menuDiv", "transition");
     });
-    header.adicionarElementoFilho(buttonMenu.element);
+    header.adicionarElementoFilho(menuButton.element);
 
-    const titulo = new h2("titulo", "Finanças Pessoais");
-    header.adicionarElementoFilho(titulo.element);
+    const title = new h2("title", "Finanças Pessoais");
+    header.adicionarElementoFilho(title.element);
 
     const menuDiv = this.createMenu();
     app.adicionarElementoFilho(menuDiv.element);
     app.adicionarElementoFilho(header.element);
 
-    const buttonadd = new Button("addButton", "addButton material-symbols-outlined", "forms_add_on");
-    buttonadd.addListener(() => {
-      this.elementInvisible("form-lancamento");
+    const plusButton = new Button("plusButton", "plusButton material-symbols-outlined", "forms_add_on");
+    plusButton.addListener(() => {
+      this.toggleClassName("formEntries", "transition");
     });
-    app.adicionarElementoFilho(buttonadd.element);
+    app.adicionarElementoFilho(plusButton.element);
 
     const form = this.criarForm();
     app.adicionarElementoFilho(form.element);
@@ -104,18 +104,17 @@ class Tela {
       app.adicionarElementoFilho(divTable.element);
     }
 
-    const inicio = new Button("inicioButton", "inicioButton material-symbols-outlined", "keyboard_arrow_up");
-    inicio.addListener(() => {
+    const begin = new Button("beginButton", "beginButton material-symbols-outlined", "keyboard_arrow_up");
+    begin.addListener(() => {
       window.scrollTo(0, 0);
     });
-    app.adicionarElementoFilho(inicio.element);
+    app.adicionarElementoFilho(begin.element);
     const [body] = document.getElementsByTagName("body");
     body.appendChild(app.element);
   }
 
   createMenu() {
     const menuDiv = new Div("menuDiv", "menuDiv");
-    menuDiv.element.classList.add("elementInvisible");
     for (const mes of this.ano.meses) {
       const menuLinkMes = new Link(
         "menuLink",
@@ -125,48 +124,48 @@ class Tela {
         );
         menuDiv.adicionarElementoFilho(menuLinkMes.element);
         menuLinkMes.addListener(() => {
-          this.elementInvisible("menuDiv");
+          this.toggleClassName("menuDiv", "transition");
         });
       }
       return menuDiv;
   }
 
   criarForm() {
-    const form = new Div("form-lancamento", "lancamento");
-    form.element.classList.add("elementInvisible");
-    this.mesSelect = new Select("mes");
+    const form = new Div("formEntries", "formEntries");
+    // form.element.classList.add("invisibleElement");
+    this.mesSelect = new Select("mes", "inputSelectForm");
     for (const mes of this.ano.meses) {
-      this.mesSelect.adicionarOpcao(mes.nome);
+      this.mesSelect.adicionarOpcao(mes.nome, "optionForm");
     }
 
-    this.tipoSelect = new Select("tipo");
-    this.tipoSelect.adicionarOpcao("receita");
-    this.tipoSelect.adicionarOpcao("despesa");
+    this.tipoSelect = new Select("tipo", "inputSelectForm");
+    this.tipoSelect.adicionarOpcao("receita","optionForm");
+    this.tipoSelect.adicionarOpcao("despesa","optionForm");
 
-    this.categoriaInputText = new Input("categoria", "text", "categoria");
-    this.valorInputNumber = new Input("valor", "number", "valor");
+    this.categoriaInputText = new Input("categoria", "text", "categoria", "inputSelectForm");
+    this.valorInputNumber = new Input("valor", "number", "valor", "inputSelectForm");
 
-    const botaoDeAdicionar = new Button(
-      "button-add",
-      "button-add",
+    const addEntryButton = new Button(
+      "addEntryButton",
+      "addEntryButton",
       "Adicionar Lançamento"
     );
 
-    botaoDeAdicionar.addListener(() => {
+    addEntryButton.addListener(() => {
       this.adicionarLancamentos();
     });
 
-    const botaoFechar = new Button("botaoFechar", "botaoFechar", "Fechar");
-    botaoFechar.addListener(() => {
-      this.elementInvisible("form-lancamento");
+    const closeButton = new Button("closeButton", "closeButton", "Fechar");
+    closeButton.addListener(() => {
+      this.toggleClassName("formEntries", "transition" );
     });
 
     form.adicionarElementoFilho(this.mesSelect.element);
     form.adicionarElementoFilho(this.tipoSelect.element);
     form.adicionarElementoFilho(this.categoriaInputText.element);
     form.adicionarElementoFilho(this.valorInputNumber.element);
-    form.adicionarElementoFilho(botaoDeAdicionar.element);
-    form.adicionarElementoFilho(botaoFechar.element);
+    form.adicionarElementoFilho(addEntryButton.element);
+    form.adicionarElementoFilho(closeButton.element);
     return form;
   }
 
@@ -187,7 +186,7 @@ class Tela {
 
   createWarning() {
     const warningDiv = new Div("warningDiv", "warningDiv");
-    warningDiv.element.classList.add("elementInvisible");
+    warningDiv.element.classList.add("invisibleElement");
     const warningText = new h2("warningText", "Você tem certeza disso?");
     const warningDivButton = new Div("divButton", "divButton");
     const warningButtonCancel = new Button(
@@ -196,7 +195,7 @@ class Tela {
       "Cancelar"
     );
     warningButtonCancel.addListener(() => {
-      this.elementInvisible("warningDiv");
+      this.toggleClassName("warningDiv", "invisibleElement");
     });
     const warningButtonDelete = new Button(
       "buttonDelete",
@@ -218,7 +217,7 @@ class Tela {
     for (const lancamento of mes.lancamentos) {
       const button = new Button("button-delete", "button-delete material-symbols-outlined", "delete");
       button.addListener(() => {
-        this.elementInvisible("warningDiv");
+        this.toggleClassName("warningDiv", "invisibleElement");
         
         const warningDelete = document.querySelector("#buttonDelete");
         warningDelete.addEventListener("click", () => this.deletarLancamentos(mes, lancamento));

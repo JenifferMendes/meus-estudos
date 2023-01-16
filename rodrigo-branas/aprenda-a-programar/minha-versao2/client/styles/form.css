@@ -1,19 +1,23 @@
-.lancamento {
+.formEntries {
     position: fixed;
     right: 10vw;
     bottom: 10vh;
     width: 90%;
     max-width: 300px;
-    height: 390px;
-    background-color: #48375f;
+    height: 0px;
+    max-height: 390px;
+    background-color: var(--color-purple);
     border-radius: 5px;
     padding: 10px;
     z-index: 2;
+    transition: height 500ms ease-in-out, opacity 250ms ease-in-out;
+    overflow: hidden;
+    opacity: 0;
 }
-input {
+
+.inputSelectForm {
     width: 100%;
     height: 50px;
-    border: 1px solid #48375f;
     border-radius: 5px;
     margin-bottom: 10px;
     text-indent: 5px;
@@ -22,22 +26,11 @@ input {
     font-weight: 700; 
 }
 
-select {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 1.3rem;
-    font-weight: 700; 
+.optionForm {
+    background-color: var(--color-cyan);
 }
 
-option {
-    background-color: var(--color-purple);
-    
-}
-
-.button-add {
+.addEntryButton {
     width: 100%;
     height: 60px;
     background-color: var(--color-cyan);
@@ -49,7 +42,7 @@ option {
     margin-bottom: 10px;
 }
 
-.botaoFechar {
+.closeButton {
     width: 100%;
     height: 60px;
     background-color: var(--color-cyan);
@@ -58,4 +51,9 @@ option {
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.transition {
+    height: 100%;
+    opacity: 1;
 }
