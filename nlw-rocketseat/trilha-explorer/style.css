@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #09090A;
+    color: white;
+
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+}
