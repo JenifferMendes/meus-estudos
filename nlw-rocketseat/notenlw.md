@@ -10,6 +10,7 @@
 
 # Aulas:
 - [x] aula 01
+- [x] aula 02
 
 
 ---
@@ -26,5 +27,6 @@ Método HTTP: Get, Post, Put, Patch, Delete
 
 
 # Aulas:
-- [] aula 01 - 23min
+- [x] aula 01 
+- [ ] aula 02
 - 
