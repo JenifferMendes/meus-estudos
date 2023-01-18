@@ -29,4 +29,3 @@ Método HTTP: Get, Post, Put, Patch, Delete
 # Aulas:
 - [x] aula 01 
 - [ ] aula 02
-- 

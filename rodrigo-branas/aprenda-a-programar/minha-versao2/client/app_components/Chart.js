@@ -10,8 +10,7 @@ class Chart {
         const invertedLERP = (minValue, maxValue, value) => (value - minValue) / (maxValue - minValue);
         const clamp = (num, minValue, maxValue) => Math.min(Math.max(num, minValue), maxValue);
 
-        let zeroAxisProportion = clamp(invertedLERP(minValue, maxValue, 0), 0, 1);
-        // if (zeroAxisProportion < 0) zeroAxisProportion = 0;        
+        let zeroAxisProportion = clamp(invertedLERP(minValue, maxValue, 0), 0, 1);        
         
         if (value >= 0) {
             const barProportionPositive = invertedLERP(0, maxValue, value);
