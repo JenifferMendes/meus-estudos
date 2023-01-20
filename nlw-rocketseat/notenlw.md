@@ -11,6 +11,10 @@
 # Aulas:
 - [x] aula 01
 - [x] aula 02
+- [ ] aula 03
+- [ ] aula 04
+- [ ] aula 05
+
 
 
 ---
@@ -25,7 +29,10 @@ Método HTTP: Get, Post, Put, Patch, Delete
 * Componente: Reaproveitar/Isolar.
 * Propriedade: Uma informação enviada para modificar um componente visual ou comportamentalmente.
 
-
+-> npx expo start
 # Aulas:
 - [x] aula 01 
 - [ ] aula 02
+- [ ] aula 03
+- [ ] aula 04
+- [ ] aula 05

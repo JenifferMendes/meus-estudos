@@ -1,6 +1,7 @@
 class Tela {
     constructor(lancamentoService) {
-        this.lancamentoService = lancamentoService;this.init();        
+        this.lancamentoService = lancamentoService;
+        this.init();        
     }
 
     async init() {
