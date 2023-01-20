@@ -11,7 +11,7 @@
 # Aulas:
 - [x] aula 01
 - [x] aula 02
-- [ ] aula 03
+- [x] aula 03
 - [ ] aula 04
 - [ ] aula 05
 
@@ -32,7 +32,7 @@ Método HTTP: Get, Post, Put, Patch, Delete
 -> npx expo start
 # Aulas:
 - [x] aula 01 
-- [ ] aula 02
+- [x] aula 02
 - [ ] aula 03
 - [ ] aula 04
 - [ ] aula 05
