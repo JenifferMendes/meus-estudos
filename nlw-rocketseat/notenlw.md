@@ -12,8 +12,8 @@
 - [x] aula 01
 - [x] aula 02
 - [x] aula 03
-- [ ] aula 04
-- [ ] aula 05
+- [x] aula 04
+- [x] aula 05
 
 
 
@@ -36,3 +36,11 @@ Método HTTP: Get, Post, Put, Patch, Delete
 - [ ] aula 03
 - [ ] aula 04
 - [ ] aula 05
+
+
+# próximos passos:
+- [ ] Autenticação (Firebase, Auth0)
+- [ ] Notificações Push / Service Workers
+- [ ] Perfil público com gráfico de resumo
+- [ ] opção de deletar o habito
+- [ ] 
