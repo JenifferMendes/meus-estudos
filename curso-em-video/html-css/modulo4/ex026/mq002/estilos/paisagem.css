@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* configurações deitado */
+
+body {
+    background-image: url(..//imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
