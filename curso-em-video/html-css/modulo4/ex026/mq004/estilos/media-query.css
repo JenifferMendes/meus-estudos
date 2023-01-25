@@ -1,2 +1,76 @@
 @charset "UTF-8";
 /* Todas as demais mídias */
+
+/* typical device breakpoints
+What breakpoints should I use in 2022?
+Mobile – 360 x 640; 375 x 667; 360 x 720.
+Tablet – 768 x 1024.
+iPhone – 375 x 812.
+Laptop – 1366 x 768.
+Desktop or high-resolution laptop – 1920 x 1080.
+*/
+
+/* impressão */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../imagens/back-print.jpg);/* desnecessario */ 
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone, img#tablet, img#pc, img#tv { 
+        display: none; 
+    }
+    img#print {
+        display: block;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone, img#print, img#pc, img#tv { 
+        display: none; 
+    }
+    img#tablet {
+        display: block;
+    }
+}
+/* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone, img#print, img#pc, img#tablet { 
+        display: none; 
+    }
+
+    img#pc {
+        display: block;
+    }
+}
+/* telas grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone, img#tablet, img#print, img#pc { 
+        display: none; 
+    }
+    img#tv {
+        display: block;
+    }
+}

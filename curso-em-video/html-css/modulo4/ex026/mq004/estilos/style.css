@@ -42,7 +42,7 @@ img {
     margin: auto;
 }
 
-img#phone, img#tablet, img#print, img#pc, img#tv { 
+img#tablet, img#print, img#pc, img#tv { 
     display: none; 
 }
 img#phone{
