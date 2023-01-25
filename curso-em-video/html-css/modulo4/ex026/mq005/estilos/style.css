@@ -18,6 +18,7 @@ header > h1 {
     color: white;
     text-align: center;
     text-shadow: 2px 2px 2px black;
+    padding: 40px;
 }
 
 span#burguer {
