@@ -1,0 +1,52 @@
+@charset "UTF-8";
+:root {
+    --color-darkblue: #223059; 
+    --color-blue: #374C8C; 
+    --color-ice: #BFCDD9; 
+    --color-darkcyan: #1C788C; 
+    --color-cyan: #3FB2BF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background-image: linear-gradient(to right, var(--color-darkblue), var(--color-darkcyan));
+    }
+    section#login {
+        width: 90vw;
+    }
+
+    section#login > div#img {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center;
+    }
+
+    section#login > div#formDiv {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: linear-gradient(to left, var(--color-blue), var(--color-cyan));
+    }
+
+    section#login {
+        width: 990px
+    }
+
+    section#login > div#img {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: center;
+    }
+    
+    section#login > div#formDiv {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
