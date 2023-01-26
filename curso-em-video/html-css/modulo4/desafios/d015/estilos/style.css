@@ -96,6 +96,7 @@ span {
     background-color: var(--color-cyan);
     color: var(--color-darkblue);
     border: 1px solid var(--color-darkcyan);
+    cursor: pointer;
 }
 
 .botao {
