@@ -12,6 +12,7 @@
         background-image: linear-gradient(to right, var(--color-darkblue), var(--color-darkcyan));
     }
     section#login {
+        
         width: 90vw;
     }
 
@@ -24,7 +25,17 @@
 
     section#login > div#formDiv {
         float: right;
+        margin-top: 130px;
         width: 70%;
+    }
+
+    div#formDiv > h1 {
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
+    div#formDiv > p {
+        font-size: 1.2em;
     }
 }
 
@@ -34,7 +45,7 @@
     }
 
     section#login {
-        width: 990px
+        width: 990px;
     }
 
     section#login > div#img {
@@ -48,5 +59,15 @@
         float: left;
         width: 50%;
         height: 100%;
+        margin-top: 130px;
+    }
+
+    div#formDiv > h1 {
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
+    div#formDiv > p {
+        font-size: 1.2em;
     }
 }

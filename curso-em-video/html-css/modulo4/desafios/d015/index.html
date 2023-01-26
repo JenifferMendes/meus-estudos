@@ -20,18 +20,16 @@
                     <p>Seja bem-vindo(a) novamente. Faça login para acessar e poder fazer as configurações no seu ambiente:</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <span class="material-symbols-outlined">account_circle</span>
-                        <label for="ilogin">Login: </label>
+                        <label for="ilogin"><span class="material-symbols-outlined">account_circle</span></label>
                         <input type="email" name="login" id="ilogin" placeholder="digite seu email" autocomplete="email" maxlength="30" required/>
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">key</span>
-                        <label for="isenha">Senha: </label>
+                        <label for="isenha"><span class="material-symbols-outlined">key</span></label>
                         <input type="password" name="senha" id="isenha" placeholder="digite sua senha" autocomplete="current-password" minlength="8" maxlength="30" required  />
                     </div>
-                    <input type="submit" value="Entrar">
-                    <a href="google.com">
-                        esqueci a senha
+                    <input type="submit" value="Entrar" class="botaoSubmit">
+                    <a href="google.com" class="botao">
+                        Esqueci a senha 
                         <span class="material-symbols-outlined">mail</span>
                     </a>
                 </form>
