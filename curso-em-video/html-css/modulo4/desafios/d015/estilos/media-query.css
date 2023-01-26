@@ -38,14 +38,14 @@
     }
 
     section#login > div#img {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
         background-position: center;
     }
     
     section#login > div#formDiv {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }
