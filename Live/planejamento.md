@@ -1,7 +1,7 @@
 # Planejamento das lives na [twitch](https://www.twitch.tv/jkoizumii)
 
 ## METAS DE JANEIRO E FEVEREIRO
-- [ ] terminar o modulo 4 do html e css do guanabara.
+- [x] terminar o modulo 4 do html e css do guanabara.
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas
 - [ ] arrumar portfolio (provisorio)
