@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root {
+    --color-bg: #100626;
+    --color-bg-container: #220C40;
+    --color-elements:#5A278C;
+    --color-pink: #E68DF2;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+.container {
+    background-color: var(--color-bg-container);
+    border-radius: 10px;
+    display: flex;
+    width: 650px;
+    padding: 30px;
+    margin: 50px auto;
+    animation: changeBorder;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    margin: 0 20px;
+    color: var(--color-elements);
+    text-shadow: 1px 1px 3px var(--color-pink);
+    /* animation: changeColor 1s infinite; */
+
+}
+
+.container-dot {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.dot {
+    background-color: var(--color-bg-container);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    animation: change 1s infinite;
+}
+.dot:nth-child(2) {
+    animation: change 1s 1s infinite;
+}
+
+.dot:last-child {
+    animation: change 1s 2s infinite;
+}
+
+
+@keyframes change {
+    from { background-color: var(--color-bg-container);}
+    to { background-color: var(--color-elements);}
+}
+
+@keyframes changeBorder {
+    from { box-shadow: 1px 1px 10px  #220C40;}
+    to { box-shadow: 1px 1px 10px #E68DF2; }
+}
+
+@keyframes changeColor {
+    from {color: var(--color-bg-container);}
+    to {color: var(--color-elements);}
+}
