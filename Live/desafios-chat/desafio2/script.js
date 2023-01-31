@@ -5,6 +5,15 @@
 // }
 // document.addEventListener("click", findOutId);
 
+
+function createElement(type) {
+    const createElement = document.createElement("span")
+    createElement.className = "material-symbols-outlined";
+    createElement.innerText = type;
+    return createElement;
+}
+
+
 document.addEventListener("click", function(findOutId){
 const elementId = findOutId.target.id;
 console.log(elementId);
@@ -26,13 +35,19 @@ const span = bg.querySelector(".material-symbols-outlined");
         bga.appendChild(createO); 
     }
     if (elementId == 2) {
-        const bga = document.getElementById("3")
+        
         const createO = document.createElement("span")
         createO.innerText = "radio_button_unchecked";
         createO.className = "material-symbols-outlined";
         bga.appendChild(createO); 
     }
 });
+
+        //const bga = document.getElementById("3")
+        // const createO = document.createElement("span")
+        // createO.innerText = "radio_button_unchecked";
+        // createO.className = "material-symbols-outlined";
+        // bga.appendChild(createO); 
 
 // se marcado em tal lugar, o computador marca em lugar especifico;
 
