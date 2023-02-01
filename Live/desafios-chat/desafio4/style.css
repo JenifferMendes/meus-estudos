@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root {
+    --color01: #8C7B6C;
+    --color02: #A69485;
+    --color03: #F2F2F2;
+    --color04: #BFBFBF;
+    --color05: #262626;
+    --color-disk01:#BDF2E3;
+    --color-disk02: #B6DBF2;
+    --color-disk03: #D3C5F8;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: var(--color05);
+    width: 100vw;
+    height: 100vh;
+}
+
+.game {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: var(--color04);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tower {
+    position: relative;
+    width: 90px;
+    height: 300px;
+    border-bottom: 5px solid var(--color05);
+    margin: auto;
+
+}
+
+.tower {
+    flex: 0 0 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 4px solid black;
+    min-height: 30px;
+    position: relative;
+}
+
+.tower::after {
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    background-color: black;
+}
+
+.disk {
+    width: 70px;
+    height: 15px;
+    border-radius: 5px;
+    z-index: 10;
+    border: 0.5px solid black;
+}
+
+.purple {
+    background-color: var(--color-disk01);
+    width: 40px;
+} 
+
+.cyan {
+    background-color: var(--color-disk02);
+    width: 50px;
+}
+
+.yellow {
+    background-color: var(--color-disk03);
+    width: 60px;
+}

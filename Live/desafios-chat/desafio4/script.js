@@ -1,29 +1,40 @@
-const hasteInicial = [5,4];
-const hasteAuxiliar = [3];
-const hasteFinal = [2,1]
-console.log(hasteInicial[1], "inicial antes");
-// hasteFinal = []
-// console.log(hasteInicial[2]);
-// console.log(hasteAuxiliar);
+const towerOne = [3,2,1];
+const towerTwo = [];
+const towerThree= [];
 
-const i = 1  // id click
-
-console.log(hasteAuxiliar, "auxiliar antes");
-if (hasteInicial[i] === hasteInicial[hasteInicial.length - 1]) {
-    if (hasteInicial[hasteInicial.length - 1] < hasteAuxiliar[hasteAuxiliar.length - 1]) {
-        hasteAuxiliar.push(hasteInicial[i]);
-        console.log(hasteAuxiliar[hasteInicial.length - 1], "acrescentou o ultimo");
-        console.log(hasteAuxiliar, "depois dos dois if");
-    } else {
-        console.log("o valor é maior que o da pilha");
+function moveDisk(id, fromTower, toTower) {
+    const i = id  // id click
+    if (fromTower[i] === fromTower[fromTower.length - 1]) {
+        if (toTower.length === 0 || fromTower[fromTower.length - 1] < toTower[toTower.length - 1]) {
+            toTower.push(fromTower[i]);
+            fromTower.pop();
+            return "Disco movido com sucesso!"
+        } else {
+            return "O disco é maior que o disco da pilha que você deseja colocar!";
+        }
+    } else {       
+        return "Não é o ultimo da pilha!";
     }
-} else {
-    console.log("não é o ultimo da pilha");
 }
 
-// if (hasteInicial[hasteInicial.length - 1] < hasteAuxiliar[hasteAuxiliar.length - 1] ){
-// if (disco[i] arrastado < disco[i] na haste) {
-//     console.log("pode colocar");
-// } else {
-//     console.log("não colocar, voltar pra haste de onde saiu");
-// }
+function checksWin(quantityDisk, tower) {
+    if (tower.length === quantityDisk) {
+        return "você ganhou"
+    } else {
+        return "continue"
+    }
+}
+
+// console.log(towerOne, towerTwo, towerThree, moveDisk(2, towerOne, towerThree));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(1, towerOne, towerTwo));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(0, towerThree, towerTwo));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(0, towerOne, towerThree));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(1, towerTwo, towerOne));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(0, towerTwo, towerThree));
+// console.log(towerOne, towerTwo, towerThree, moveDisk(0, towerOne, towerThree));
+// console.log(checksWin(3, towerThree));
+
+// const message = arrastaPraCima(towerOne, towerThree)
+// console.log(towerOne, "haste remetário saida");
+// console.log(towerThree, "haste destinatente saida");
+// console.log(message)
