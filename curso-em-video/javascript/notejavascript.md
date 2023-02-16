@@ -9,3 +9,22 @@
 
 
 
+## Primeiros comandos
+
+`window.alert()`
+
+`window.confirm()`
+
+`window.prompt()`
+
+
+## comentários
+
+```js
+// comentario em uma linha
+/* comentario 
+em 
+varias
+linhas
+*/
+``` 
