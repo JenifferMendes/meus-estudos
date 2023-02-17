@@ -27,7 +27,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
   
 - [x] **JavaScript**
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) (gratuito)
-* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/javascript/notejavascript.md) :yellow_circle:
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/javascript/notejavascript.md) 🟣
 
 - [x] **Git e GitHub** 
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA) (gratuito)
@@ -45,7 +45,7 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 
 - [ ] **Algoritmos e estruturas de dados em JavaScript**
 * Você pode acessar em: [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/) (gratuito)
-* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/freecodecamp/javascript/anota%C3%A7%C3%B5es/notejavascriptfcc.md)  :yellow_circle:
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/freecodecamp/javascript/anota%C3%A7%C3%B5es/notejavascriptfcc.md)  🟣
 
 # :date: Cursos que quero fazer:
 
