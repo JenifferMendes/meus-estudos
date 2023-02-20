@@ -1,6 +1,6 @@
 # Planejamento das lives na [twitch](https://www.twitch.tv/jkoizumii)
 
-## METAS
+## METAS GERAIS
 ### Fazer
 - [ ] reassistir o curso de javascript do guanabara
 - [ ] fazer o curso de react do daciuk
