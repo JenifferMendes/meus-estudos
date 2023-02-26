@@ -109,8 +109,102 @@ var s = 'JavaScript'
 'Eu estou aprendendo' + s // usa concatenação
 `Eu estou aprendendo ${s}` // usa template string
 ```
-
 replace(x, y) -> troca x por y.
+
+
+# Operadores
+- aritméticos 
+- atribuição
+- relacionais
+- lógicos
+- ternário
+
+
+## aritméticos  
+```js
+5 + 2 = 7   
+5 - 2 = 3  
+5 * 2 = 10  
+5 / 2 = 2.5  
+5 % 2 = 1 //resto da divisão inteira  
+5 ** 2 = 25
+```
+### ordem de precedência
+``()``  
+``**``  
+``* / %``  
+``+ - ``
+
+
+## atribuição
+
+
+```js
+var n = 3
+n = n + 4    n += 4
+n = n - 5    n -= 5
+n = n * 4    n *= 4
+n = n / 2    n /= 2
+n = n ** 2   n **= 2
+n = n % 5    n %= 5
+```
+
+
+Incremento
+```js
+var x = 5
+x = x + 1   x += 1  x++
+x = x - 1   x -= 1  x--
+```
+### relacionais
+resultado = valor boolean
+```js
+5 > 2  true
+7 < 4  false
+8 >= 8  true
+9 <= 7  false
+5 == 5  true
+4 != 4  false
+```
+Identidade
+```js
+5 == 5  true
+5 == '5' true
+5 === '5' false
+5 === 5  true
+```
+
+## lógicos
+```js
+! negação 
+&& conjunção (e)
+|| disjunção (ou)
+```
+ordem: `!` > `&&` > `||`
+
+### Ordem de precedência:  
+aritméticos: ``()`` >  `` **`` >  ``* / %`` > ``+ - ``  
+relacionais: o que vem primeiro  
+lógicos: `!` > `&&` > `||`
+
+### ternário
+ teste ``?`` true ``:`` false
+
+
+# DOM - Document Object Model  
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Terminal
 obs: não esqueça de fechar os terminais: 
 - no node ->  .exit
