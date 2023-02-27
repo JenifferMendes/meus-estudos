@@ -192,9 +192,30 @@ lógicos: `!` > `&&` > `||`
 
 
 # DOM - Document Object Model  
+## Árvore DOM
+```mermaid
+graph TD;
+window --> location
+window --> document
+window --> history
+document --> html
+html --> head
+html --> body
+head --> meta
+head --> title
+body --> h1
+body --> p_1[p]
+body --> p_2[p]
+body --> div
+p_2[p] --> strong
+```
 
-
-
+Selecionando por:
+- Marca: ``getElementsByTagName()``
+- ID: ``getElementsById()``
+- Nome: ``getElementsByName()``
+- Classe: ``getElementsByClassName()``
+- Seletor: ``querySelector(``) ou ``querySelectorAll()``
 
 
 
