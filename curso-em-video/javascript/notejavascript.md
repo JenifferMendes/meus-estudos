@@ -215,15 +215,71 @@ Selecionando por:
 - ID: ``getElementsById()``
 - Nome: ``getElementsByName()``
 - Classe: ``getElementsByClassName()``
-- Seletor: ``querySelector(``) ou ``querySelectorAll()``
+- Seletor: ``querySelector()`` ou ``querySelectorAll()``
 
+## Eventos Dom
+exemplos:
+- mouse enter -> quando entra no elemento
+- mouse move -> quando o se move dentro do elemento
+- mouse down -> quando clica dentro do elemento
+- mouse up -> quando solta o click dentro do elemento
+- click -> o clique inteiro dentro do elemento
+- mouse out -> quando o mouse sai do elemento
 
+# Condicões
 
+```mermaid
+graph TD;
+id1((&nbsp))--> p_1[&nbsp]
+p_1[&nbsp]--> p_2[&nbsp]
+p_2[&nbsp]--> p_3[&nbsp]
+p_3[&nbsp]--> true
+p_3{&nbsp}--> false
+true--> p_4((&nbsp))
+false--> p_4((&nbsp))
+p_4((&nbsp))--> p_5[&nbsp]
+p_5[&nbsp]--> id2((&nbsp))
 
+style id1 fill:#ff0000
+style p_3 fill:#ff0000
+style id2 fill:#ff0000
+```
 
+```js
+if (condição) {
+  true
+} else {
+  false
+}
+```
+## Condições aninhadas
 
+```mermaid
+%%{init: {"flowchart": { "curve": "linear"}}}%%
+flowchart TB;
+id1[&nbsp]--> id2[&nbsp]
+id1{&nbsp}--> id3[&nbsp]
+id3{&nbsp}--> id4[&nbsp]
+id3{&nbsp}--> id5[&nbsp]
+id4[&nbsp]--> id6((&nbsp))
+id5[&nbsp]--> id6((&nbsp))
+id2[&nbsp]----> id7((&nbsp))
+id6((&nbsp))--> id7((&nbsp))
 
-
+style id1 fill:#ff0000
+style id3 fill:#ff0000
+```
+```js
+if (condição 1) {
+  bloco 1
+} else {
+  if (condição 2) {
+    bloco 2
+  } else {
+    bloco 3
+  }
+}
+```
 
 
 ## Terminal
