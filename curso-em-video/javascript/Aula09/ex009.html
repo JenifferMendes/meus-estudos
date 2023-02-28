@@ -17,30 +17,27 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim</div>
+    <div id="msg" name="msgs">Clique em mim</div>
     <script>
-        /*Selecionando por:
-        - Marca: getElementsByTagName()
-        - ID: getElementsById()
-        - Nome: getElementsByName()
-        - Classe: getElementsByClassName()
-        - Seletor: querySelector() ou querySelectorAll()
-        */
        var corpo = window.document.body
        var p1 = window.document.
        getElementsByTagName('p')[1]
-       /*window.document.write('Está escrito assim:' + p1.innerText)
-       corpo.style.background = 'black'
-       p1.style.color = 'red'
-       document.write(p1.innerHTML)
-       window.alert(p1.innerHTML)
+    //    window.document.write('Está escrito assim: ' + p1.innerText)
+    //    corpo.style.background = 'black'
+    //    p1.style.color = 'red'
+    //    document.write(p1.innerHTML)
+    //    window.alert(p1.innerText)
        var d = window.document.getElementById('msg')
-       d.style.background = 'green' 
+       d.style.background = 'yellow'
+       d.style.color = 'purple'
        d.innerText = 'Estou aguardando...'
-       window.document.getElementById('msg').innerText = "OLÁ"
+    //    window.document.getElementById('msg').innerText = "OLÁ"
        var d = window.document.querySelector('div#msg')
-       d.style.background = 'blue'
-        */
+    //    d.style.background = 'blue';
+    //    d.style.color = 'white';
+    // var msg = window.document.getElementsByName('msgs')[0]
+    // msg.innerText = "alo"
+        
 
     </script>
 </body>
