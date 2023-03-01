@@ -194,7 +194,8 @@ lógicos: `!` > `&&` > `||`
 # DOM - Document Object Model  
 ## Árvore DOM
 ```mermaid
-graph TD;
+%%{init: {"flowchart": { "curve": "linear"}}}%%
+flowchart TB;
 window --> location
 window --> document
 window --> history
@@ -240,9 +241,9 @@ false--> p_4((&nbsp))
 p_4((&nbsp))--> p_5[&nbsp]
 p_5[&nbsp]--> id2((&nbsp))
 
-style id1 fill:#ff0000
-style p_3 fill:#ff0000
-style id2 fill:#ff0000
+style id1 fill:#B667FA
+style p_3 fill:#B667FA
+style id2 fill:#B667FA
 ```
 
 ```js
@@ -266,8 +267,8 @@ id5[&nbsp]--> id6((&nbsp))
 id2[&nbsp]----> id7((&nbsp))
 id6((&nbsp))--> id7((&nbsp))
 
-style id1 fill:#ff0000
-style id3 fill:#ff0000
+style id1 fill:#B667FA
+style id3 fill:#B667FA
 ```
 ```js
 if (condição 1) {
@@ -280,6 +281,115 @@ if (condição 1) {
   }
 }
 ```
+
+## Condição Múltipla
+```mermaid
+flowchart TB;
+id0[&nbsp]--> id1[&nbsp]
+id1[&nbsp]--> id2[&nbsp]
+id1{&nbsp}--> id3[&nbsp]
+id1{&nbsp}--> id4[&nbsp]
+id1{&nbsp}--> id5[&nbsp]
+id2[&nbsp]--> id6((&nbsp))
+id3[&nbsp]--> id6((&nbsp))
+id4[&nbsp]--> id6((&nbsp))
+id5[&nbsp]--> id6((&nbsp))
+id6((&nbsp))--> id7((&nbsp))
+
+style id1 fill:#B667FA
+style id7 fill:#B667FA
+```
+
+```js
+switch (expressão){
+  case valor 1:
+    bloco 1
+    break
+  case valor :;
+    bloco 2
+    break
+  case valor 3:
+    bloco 3
+    break
+  default:
+    bloco 4
+    break
+}
+```
+# Repetições
+
+```mermaid
+flowchart TB;
+id0((&nbsp))--> id1{tem pizza?}
+id1{tem pizza?}--true-->id2[&nbsp]
+id2[comer um pedaço]--> id1{&nbsp}
+id1{tem pizza?}--false--> id4(( chorar, calado))
+
+style id0 fill:#B667FA
+style id1 fill:#B667FA
+style id4 fill:#B667FA
+```
+
+```js
+while(condição){
+  bloco 1
+}
+```
+
+```mermaid
+flowchart TB;
+id0((&nbsp))--> id1[&nbsp]
+id1[&nbsp]--> id2{&nbsp}
+id2{&nbsp}--true--> id0((&nbsp))
+id2{&nbsp}--false--> id3[&nbsp]
+
+style id0 fill:#B667FA
+style id2 fill:#B667FA
+```
+
+```js
+do {
+  bloco 1
+} while(condição)
+```
+
+```mermaid
+flowchart TB;
+id0((&nbsp))--> id1{{&nbsp}}
+id1{{&nbsp}}--> id2[&nbsp]
+id2[&nbsp]--true--> id1{{&nbsp}}
+id2[&nbsp]--false--> id3((&nbsp))
+
+style id0 fill:#B667FA
+style id1 fill:#B667FA
+style id3 fill:#B667FA
+```
+```js
+for(inicialização; teste lógico; incremento){
+  bloco 1 
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Terminal
