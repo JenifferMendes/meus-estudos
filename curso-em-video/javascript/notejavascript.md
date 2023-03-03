@@ -456,6 +456,18 @@ function parimp(n){
   }
   let numero = parimp(11)
 ```
+Funções podem ter: chamada, parametro, ação, retorno.
+
+- recursividade: quando a função chama ela mesmo.
+# daqui pra frente
+
+- functions
+- objeto
+- modularização
+- regex
+- json
+- ajax
+- nodejs
 
 ## Comandos
 
