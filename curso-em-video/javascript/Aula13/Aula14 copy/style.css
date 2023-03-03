@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(197, 120, 197);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.404)
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
