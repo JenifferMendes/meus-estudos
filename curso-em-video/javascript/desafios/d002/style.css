@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+.title {
+    color: white;
+    text-align: center;
+}
+
+.divButton {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 150px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 10%;
+    background-color: rgb(247, 75, 247);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
