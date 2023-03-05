@@ -31,3 +31,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.message {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}

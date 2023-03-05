@@ -1,21 +1,22 @@
 const app = document.querySelector('#app');
 const title = document.createElement('h1');
-title.innerHTML = "Boas-vindas";
+title.innerHTML = "Antes e depois";
 title.className = 'title';
 app.appendChild(title);
 
-function search() {
-    const name = window.prompt('Qual é o seu nome? ');
-    const age = window.prompt(`Olá ${name}! Quantos anos você tem?`)
-    const message = `Acabei de conhecer ${name}, que tem ${age} anos de idade!`
+function previousAndNextNumber() {
+    const num = +window.prompt('Digite um número inteiro qualquer: ');
+    const previous = num - 1
+    const next = num + 1
+    const message = `Antes de ${num}, temos o número ${previous}.\nDepois de ${num}, temos o número ${next}.`
     window.alert(message);
 }
 
 function startChallenge(){
     const button = document.createElement('div');
     button.className = 'button';
-    button.innerHTML = 'Inicie o desafio'
-    button.addEventListener("click", search)
+    button.innerHTML = 'Antecessor e Sucessor'
+    button.addEventListener("click", previousAndNextNumber)
     return button;
 }
 const divButton = document.createElement('div');
