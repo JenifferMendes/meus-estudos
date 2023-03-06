@@ -2,16 +2,18 @@ const priceDollar = window.prompt('Antes de mais nada. Quanto está a cotação 
 
 const app = document.querySelector('#app');
 const title = document.createElement('h1');
-title.innerHTML = "Conversor R$ -> US$";
+title.innerHTML = "Conversor R$ 🠮 US$";
 title.className = 'title';
 app.appendChild(title);
 
 function measurementConverter() {
-    const price = parseFloat(priceDollar.replace(",","."))
-    const real = +window.prompt();
-    const temperatureF = 1.8 * parseFloat(temperature) + 32;
+    priceDollar.replace(",", ".");
+    const price = parseFloat(priceDollar);
+    const real = window.prompt('Quantos R$ você tem na carteira?');
+    real.replace(",", ".")
+    const priceInDollar = parseFloat(real) / price
     const message = document.querySelector('#message')
-    message.innerHTML = `<strong>A temperatura de ${priceDollar.replace(".", ",")}°C, corresponde a...</strong></br>${temperatureK}K (Kelvin) </br> ${temperatureF}°F `
+    message.innerHTML = `<strong>Você possui R$${real} reais, que corresponde a  U$${priceInDollar} dolares</strong> `
 }
 
 function startChallenge(){

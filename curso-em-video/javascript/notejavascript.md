@@ -85,7 +85,9 @@ numObj.toFixed(1); // Retorna '12345.7': note o arredondamento
 ```
 
 Para moeda br:  
-number.toLocaleString( `pt-BR` , {style: 'currency', currency: 'BRL'})
+```js
+number.toLocaleString( "pt-Br" , {style: 'currency', currency: 'BRL'})
+```
 
 ### String > Number  
 
