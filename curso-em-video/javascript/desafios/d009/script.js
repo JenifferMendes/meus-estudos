@@ -9,25 +9,27 @@ function formatMoney(price){
    return money
 }
 
-function discountCalculation() {
+function readjustmentCalculation() {
     const customer = window.prompt('Qual é o nome do funcionário?');
     const wage = window.prompt(`Qual é o salário ${customer}`);
-    const readjustment = window.prompt(`O salário de ${customer} vai ser reajustado em qual porcentagem?`)
-    const priceReplace = price.replace(",", ".");
-    const priceNumber = parseFloat(priceReplace).toFixed(2)
-    const discount = (priceNumber * 0.1).toFixed(2)
-    const priceWithDiscount = formatMoney(priceNumber - discount)
-    const priceFormatted = formatMoney(+priceNumber);
-    const discountFormatted = formatMoney(+discount);
+    const readjustment = (+window.prompt(`O salário de ${customer} vai ser reajustado em qual porcentagem?`)) 
+   
+    const wageReplace = wage.replace(",", ".");
+    const wageNumber = parseFloat(wageReplace).toFixed(2)
+    const increase = +wageNumber * (readjustment / 100);
+    const readjustedWage = increase + +wageNumber;
+    const increaseFormatted = formatMoney(increase)
+    const wageFormatted = formatMoney(+wage);
+    const readjustedWageFormatted = formatMoney(+readjustedWage);
     const message = document.querySelector('#message')
-    message.innerHTML = `<strong>Calculando desconto de 10% para ${product} </strong></br> O preço original era ${priceFormatted}</br> Você acaba de ganhar ${discountFormatted}</br> No fim, você vai pagar ${priceWithDiscount}`
+    message.innerHTML = `<strong>${customer} recebeu um aumento salarial!!</strong></br> O salário atual era ${wageFormatted}.</br>Com um aumento de ${readjustment}%, o salário vai aumentar ${increaseFormatted} no próximo mês.</br> E a partir daí, ${customer} vai passar a ganhar ${readjustedWageFormatted}.`
 }
 
 function startChallenge(){
     const button = document.createElement('div');
     button.className = 'button';
     button.innerHTML = 'Reajustar Salário'
-    button.addEventListener("click", discountCalculation)
+    button.addEventListener("click", readjustmentCalculation)
     return button;
 }
 
