@@ -1,5 +1,9 @@
 # Anotações referente ao curso 'JavaScript' - **Em Atualização!!!**
 
+## **JavaScript**
+* Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) (gratuito)
+
+
 ## Documentação
 
 [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
