@@ -2,7 +2,6 @@
 
 ## METAS GERAIS
 ### Fazer
-- [ ] terminar projeto timeline da live
 - [ ] fazer o curso de react do daciuk
 - [ ] desafios do chat (o que ta resgatado)
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
@@ -20,3 +19,4 @@
 - [x] planejamento curso.
 - [x] terminar o modulo 4 do html e css do guanabara.
 - [x] reassistir o curso de javascript do guanabara
+- [x] terminar projeto timeline da live
