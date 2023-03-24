@@ -43,9 +43,9 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
   
 # :books:Cursos que estou fazendo:
 
-- [ ] **Algoritmos e estruturas de dados em JavaScript**
-* Você pode acessar em: [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/) (gratuito)
-* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/freecodecamp/javascript/anota%C3%A7%C3%B5es/notejavascriptfcc.md)  🟣
+- [ ] **Bootcamp React**
+* Você pode acessar em: [Bootcamp React]( https://fdaciuk.notion.site/Bootcamp-React-js-B-Academy-04beed6c0dda4b79a28709b0f4cf6042) (gratuito)
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/bootcamp-react/blob/main/docs/note.md) :purple_circle:
 
 # :date: Cursos que quero fazer:
 
@@ -65,7 +65,12 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
 
 - [ ] Segurança da Informação: Módulo 02
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=77pG2rellUk&list=PLHz_AreHm4dlT599reA1xLkbT83g2gMvI) (gratuito)
-*  Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/si/notesi.md) :yellow_circle:   
+*  Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/si/notesi.md) :yellow_circle:  
+  
+- [ ] **Algoritmos e estruturas de dados em JavaScript**
+* Você pode acessar em: [(Free Code Camp)](https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/) (gratuito)
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/freecodecamp/javascript/anota%C3%A7%C3%B5es/notejavascriptfcc.md)  🟣
+
 
 
   ---
