@@ -2,14 +2,13 @@
 
 ## METAS GERAIS
 ### Fazer
-- [ ] terminar projeto timeline da live
 - [ ] fazer o curso de react do daciuk
+- [ ] organizar a descrição do "meus-estudos"
 - [ ] desafios do chat (o que ta resgatado)
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] terminar o curso de javascript do free code camp.
-- [ ] organizar a descrição do "meus-estudos"
 - [ ] Arrumar o readme do perfil
 - [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
 - [ ] começar a trilha.
@@ -20,3 +19,4 @@
 - [x] planejamento curso.
 - [x] terminar o modulo 4 do html e css do guanabara.
 - [x] reassistir o curso de javascript do guanabara
+- [x] terminar projeto timeline da live
