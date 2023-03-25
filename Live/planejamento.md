@@ -8,10 +8,13 @@
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
+- [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
+
+## OffStream
+
 - [ ] terminar o curso de javascript do free code camp.
 - [ ] Arrumar o readme do perfil
-- [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
-- [ ] começar a trilha.
+- [ ] Projeto Secreto
 
 ### Feito
 
