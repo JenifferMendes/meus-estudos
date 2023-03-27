@@ -3,15 +3,18 @@
 ## METAS GERAIS
 ### Fazer
 - [ ] fazer o curso de react do daciuk
-- [ ] organizar a descrição do "meus-estudos"
 - [ ] desafios do chat (o que ta resgatado)
+- [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
+
+## OffStream
+
+- [ ] terminar o curso de javascript do free code camp.
+- [ ] Arrumar o readme do perfil
+- [ ] Projeto Secreto
+- [ ] organizar a descrição do "meus-estudos"
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
-- [ ] terminar o curso de javascript do free code camp.
-- [ ] Arrumar o readme do perfil
-- [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
-- [ ] começar a trilha.
 
 ### Feito
 
