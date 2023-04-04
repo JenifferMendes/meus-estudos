@@ -16,6 +16,7 @@
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] projeto do flyrie
+- [ ] projeto tasks
 
 ### Feito
 
