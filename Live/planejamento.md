@@ -17,6 +17,7 @@
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] projeto do flyrie(roleta)
 - [ ] projeto tasks
+- [ ] cronograma das lives
 
 ### Feito
 
