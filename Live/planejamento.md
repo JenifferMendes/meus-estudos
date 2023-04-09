@@ -4,7 +4,7 @@
 ### Fazer
 - [ ] fazer o curso de react do daciuk
 - [ ] desafios do chat (o que ta resgatado)
-- [ ] começar um projeto do JKODE.(escrever ideias e começar a base = goldlist)
+- [ ] começar o projeto do goldlist(escrever ideias e começar a base = goldlist)
 - [ ] projeto com o triple(resgate da loja)
 
 ## OffStream
