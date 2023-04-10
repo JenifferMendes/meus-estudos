@@ -3,7 +3,7 @@
 ## METAS GERAIS
 ### Fazer
 - [ ] fazer o curso de react do daciuk
-- [ ] desafios do chat (o que ta resgatado)
+- [ ] desafios do chat (o que ta resgatado/ fechar a possibilidade de novos pedidos)
 - [ ] começar o projeto do goldlist(escrever ideias e começar a base = goldlist)
 - [ ] projeto com o triple(resgate da loja)
 
