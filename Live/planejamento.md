@@ -18,7 +18,7 @@
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
-- [ ] projeto do flyrie(roleta)
+- [ ] projeto da roleta
 - [ ] projeto tasks
 - [ ] cronograma das lives
 
