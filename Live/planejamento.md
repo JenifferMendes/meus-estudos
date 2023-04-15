@@ -5,7 +5,7 @@
 - [ ] fazer o curso de react do daciuk (rever)
 - [ ] planejamento da live, areas, cursos etc
 - [ ] desafios do chat (o que ta resgatado/ fechar a possibilidade de novos pedidos)
-- [ ] começar o projeto do goldlist(escrever ideias e começar a base = goldlist)
+- [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
 - [ ] projeto com o triple(resgate da loja)
 
