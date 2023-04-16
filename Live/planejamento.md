@@ -8,6 +8,7 @@
 - [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
 - [ ] projeto com o triple(resgate da loja)
+- [ ] roadmap de data engineer 
 
 ## OffStream
 
