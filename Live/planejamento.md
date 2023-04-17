@@ -3,7 +3,6 @@
 ## METAS GERAIS
 ### Fazer
 - [ ] fazer o curso de react do daciuk (rever)
-- [ ] planejamento da live, areas, cursos etc
 - [ ] desafios do chat (o que ta resgatado/ fechar a possibilidade de novos pedidos)
 - [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
