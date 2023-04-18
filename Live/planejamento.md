@@ -4,10 +4,7 @@
 ### Fazer
 - [ ] fazer o curso de react do daciuk (rever)
 - [ ] desafios do chat (o que ta resgatado/ fechar a possibilidade de novos pedidos)
-- [ ] começar o projeto do goldlist
-- [ ] projeto produvidade
-- [ ] projeto com o triple(resgate da loja)
-- [ ] roadmap de data engineer 
+- [ ] projeto com o triple(resgate da loja) 
 
 ## OffStream
 
@@ -20,6 +17,9 @@
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] projeto tasks
 - [ ] cronograma das lives
+- [ ] começar o projeto do goldlist
+- [ ] projeto produvidade
+- [ ] roadmap de data engineer 
 
 ### Feito
 
