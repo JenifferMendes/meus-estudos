@@ -10,7 +10,6 @@
 
 - [ ] terminar o curso de javascript do free code camp.
 - [ ] Arrumar o readme do perfil
-- [ ] Projeto Secreto (liberar até Maio)
 - [ ] organizar a descrição do "meus-estudos"
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
