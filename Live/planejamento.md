@@ -9,6 +9,7 @@
 ## OffStream
 
 - [ ] terminar o curso de javascript do free code camp.
+- [ ] começar o curso de python do free code camp.
 - [ ] Arrumar o readme do perfil
 - [ ] organizar a descrição do "meus-estudos"
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
