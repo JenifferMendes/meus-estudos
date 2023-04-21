@@ -19,7 +19,8 @@
 - [ ] cronograma das lives
 - [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
-- [ ] roadmap de data engineer 
+- [ ] roadmap de data engineer
+- [ ] organizar avisos
 
 ### Feito
 
