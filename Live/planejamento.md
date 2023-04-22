@@ -21,6 +21,7 @@
 - [ ] projeto produvidade
 - [ ] roadmap de data engineer
 - [ ] organizar avisos
+- [ ] criar o layout dos alertas em html/css
 
 ### Feito
 
