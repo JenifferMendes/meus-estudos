@@ -10,7 +10,7 @@
 
 - [ ] terminar o curso de javascript do free code camp.
 - [ ] começar o curso de python do free code camp.
-- [ ] Arrumar o readme do perfil
+- [ ] Arrumar o readme do perfil do github
 - [ ] organizar a descrição do "meus-estudos"
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
 - [ ] separar os projetos grandes em repositorios sozinhos.
@@ -22,6 +22,7 @@
 - [ ] roadmap de data engineer
 - [ ] organizar avisos
 - [ ] criar o layout dos alertas em html/css
+- [ ] arrumar perfil das redes usando chatgpt
 
 ### Feito
 
