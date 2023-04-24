@@ -16,7 +16,6 @@
 - [ ] separar os projetos grandes em repositorios sozinhos.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] projeto tasks
-- [ ] cronograma das lives
 - [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
 - [ ] roadmap de data engineer
