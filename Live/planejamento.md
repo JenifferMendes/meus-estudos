@@ -22,6 +22,7 @@
 - [ ] organizar avisos
 - [ ] criar o layout dos alertas em html/css
 - [ ] arrumar perfil das redes usando chatgpt
+- [ ] estudar sobre data engineer
 
 ### Feito
 
