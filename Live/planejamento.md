@@ -23,6 +23,7 @@
 - [ ] criar o layout dos alertas em html/css
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
+- [ ] planejar o comeback ?
 
 ### Feito
 
