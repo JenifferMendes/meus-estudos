@@ -15,15 +15,14 @@ Neste espaço irei colocar minhas resoluções dos exercícios resolvidos dos cu
   
 - [x] **Curso HTML5 e CSS3: Módulo 01**
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n) (gratuito)
-* Minhas Anotações sobre o curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/html-css/modulo1/notemodulo01.md) :yellow_circle:
+* Minhas Anotações sobre o curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/html-css/modulo1/notemodulo01.md) :green_circle:
   
 - [x] **Curso HTML5 e CSS3: Módulo 02** 
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s) (gratuito)
-* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/html-css/modulo2/notemodulo02.md) :yellow_circle:  
+* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/html-css/modulo2/notemodulo02.md) :green_circle:
   
 - [x] **Curso HTML5 e CSS3: Módulo 03** 
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ) (gratuito)
-* Minhas anotações do curso: [Anotações](https://github.com/JenifferMendes/meus-estudos/blob/main/curso-em-video/html-css/modulo3/notemodulo03.md) :yellow_circle:
   
 - [x] **JavaScript**
 * Você pode acessar em: [Curso em Vídeo](https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1) (gratuito)
