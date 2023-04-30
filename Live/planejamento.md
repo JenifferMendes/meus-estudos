@@ -13,7 +13,7 @@
 - [ ] Arrumar o readme do perfil do github
 - [ ] organizar a descrição do "meus-estudos"
 - [ ] arrumar portfolio - traduzir as páginas, colocar os projetos feitos até agora;
-- [ ] separar os projetos grandes em repositorios sozinhos.
+- [ ] separar os projetos grandes em repositorios sozinhos e arrumar o readme.
 - [ ] arrumar o readme dos projetos - começar com o do branas (colocar no ar se possivel)
 - [ ] projeto tasks
 - [ ] começar o projeto do goldlist
