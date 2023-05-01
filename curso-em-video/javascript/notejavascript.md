@@ -41,7 +41,7 @@ linhas
 js
 var nomeVariavel;
 let nomeVariavel;
-const nomeVariavel;
+const nomeVariavel;(usar a declaração const só impede a reatribuição da identificação(nome) da variável)
 ```
 
 nomes de variáveis:
@@ -485,3 +485,21 @@ obs: não esqueça de fechar os terminais:
 * no node ->  .exit
 * terminal vscode -> exit
 * Ctrl+L = Limpa o terminal do vscode
+
+---
+Class
+```js
+Class Lancamento {
+    constructor() {
+        this.categoria = categoria;
+    }
+}
+```
+
+Instanciar uma class é criar um objeto daquela class.
+
+API - Application Programming Interface
+
+GUI - Graphic User Interface
+
+DOM - Document Object Model
