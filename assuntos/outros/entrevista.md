@@ -21,3 +21,4 @@
 
 - Personalize seu curriculo para empresa
 - Saiba + sobre a empresa
+- linkedin (adicione as pessoas sem vergonha e poste suas vitorias)
