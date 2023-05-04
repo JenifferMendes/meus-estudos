@@ -19,7 +19,6 @@
 - [ ] começar o projeto do goldlist
 - [ ] projeto produvidade
 - [ ] roadmap de data engineer
-- [ ] organizar avisos
 - [ ] criar o layout dos alertas em html/css
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
