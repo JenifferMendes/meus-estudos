@@ -22,3 +22,10 @@
 - Personalize seu curriculo para empresa
 - Saiba + sobre a empresa
 - linkedin (adicione as pessoas sem vergonha e poste suas vitorias)
+
+
+--- 
+Saber:
+- saber levantar um servidor web 100% funcional com rotas, cookies ou que seja.
+- construir interface utilizando um framewor
+- 
