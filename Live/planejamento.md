@@ -23,6 +23,7 @@
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
 - [ ] criação do planejamento de estudos
+- [ ] criação de uma tabela
 
 
 ### Feito
