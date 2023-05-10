@@ -23,7 +23,7 @@
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
 - [ ] criação do planejamento de estudos
-- [ ] projeto secreto
+- [ ] projeto secreto - sya
 
 ### Feito
 
