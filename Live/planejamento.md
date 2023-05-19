@@ -23,7 +23,6 @@
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
 - [ ] criação do planejamento de estudos
-- [ ] projeto secreto - sya
 
 ### Feito
 
@@ -32,3 +31,4 @@
 - [x] terminar o modulo 4 do html e css do guanabara.
 - [x] reassistir o curso de javascript do guanabara
 - [x] terminar projeto timeline da live
+- [x] projeto secreto - sya
