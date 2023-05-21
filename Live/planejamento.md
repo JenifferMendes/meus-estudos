@@ -23,6 +23,7 @@
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
 - [ ] criação do planejamento de estudos
+- [ ] projeto python
 - [ ] curso de python do guanabara(mundo 1)
 
 ### Feito
@@ -33,3 +34,4 @@
 - [x] reassistir o curso de javascript do guanabara
 - [x] terminar projeto timeline da live
 - [x] projeto secreto - sya
+
