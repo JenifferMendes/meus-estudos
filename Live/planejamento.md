@@ -22,7 +22,7 @@
 - [ ] criar o layout dos alertas em html/css
 - [ ] arrumar perfil das redes usando chatgpt
 - [ ] estudar sobre data engineer
-- [ ] criação do planejamento de estudos
+- [x] criação do planejamento de estudos
 - [ ] projeto python
 - [ ] curso de python do guanabara(mundo 1)
 
