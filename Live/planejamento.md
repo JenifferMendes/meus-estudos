@@ -27,7 +27,7 @@
 - [ ] curso de python do guanabara(mundo 1)
 - [ ] site fanfic
 - [ ] ia koiziny
-- [ ]jkoizumii project
+
 
 ### Feito
 
