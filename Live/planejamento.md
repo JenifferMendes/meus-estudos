@@ -25,7 +25,7 @@
 - [x] criação do planejamento de estudos
 - [ ] projeto python
 - [ ] curso de python do guanabara(mundo 1)
-- [ ] site fanfic
+- [ ] site fanfic/imagine
 
 
 ### Feito
