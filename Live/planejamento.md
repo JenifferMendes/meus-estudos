@@ -23,7 +23,6 @@
 - [ ] estudar sobre data engineer
 - [x] criação do planejamento de estudos
 - [ ] projeto python
-- [ ] curso de python do guanabara(mundo 1)
 - [ ] site fanfic/imagine
 
 
@@ -35,4 +34,5 @@
 - [x] reassistir o curso de javascript do guanabara
 - [x] terminar projeto timeline da live
 - [x] projeto secreto - sya
+- [x] curso de python do guanabara(mundo 1)
 
